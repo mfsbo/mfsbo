@@ -1,5 +1,7 @@
-### Hi there 👋
+### Hey 👋
 
+- 🏃 Working and Learning not at the same time...
+- ✉️ Reach me on farrukh at bookingonline dot co dot uk
 <!--
 **mfsbo/mfsbo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
