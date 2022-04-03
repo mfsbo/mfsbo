@@ -2,6 +2,8 @@
 
 - 🏃 Working and Learning not at the same time...
 - ✉️ Reach me on farrukh at bookingonline dot co dot uk
+
+[![Farrukh's GitHub stats](https://github-readme-stats.vercel.app/api?username=mfsbo&hide=stars&count_private=true)](https://github.com/mfsbo/)
 <!--
 **mfsbo/mfsbo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
