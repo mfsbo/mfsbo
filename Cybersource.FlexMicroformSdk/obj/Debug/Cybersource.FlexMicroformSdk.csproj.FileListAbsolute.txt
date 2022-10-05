@@ -1,0 +1,80 @@
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\Cybersource.FlexMicroformSdk.dll.config
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\Cybersource.FlexMicroformSdk.dll
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\Cybersource.FlexMicroformSdk.pdb
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\Newtonsoft.Json.dll
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.Buffers.dll
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.Memory.dll
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.Text.Json.dll
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.ValueTuple.dll
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\Newtonsoft.Json.xml
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.Buffers.xml
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.Memory.xml
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.Text.Json.xml
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\bin\Debug\System.ValueTuple.xml
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\obj\Debug\Cybersource.FlexMicroformSdk.csproj.AssemblyReference.cache
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\obj\Debug\Cybersource.FlexMicroformSdk.ReasonCode.resources
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\obj\Debug\Cybersource.FlexMicroformSdk.csproj.GenerateResource.cache
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\obj\Debug\Cybersource.FlexMicroformSdk.csproj.CoreCompileInputs.cache
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\obj\Debug\Cybersource.FlexMicroformSdk.csproj.CopyComplete
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\obj\Debug\Cybersource.FlexMicroformSdk.dll
+C:\Users\LC5657434\source\repos\Cybersource.FlexMicroformSdk\obj\Debug\Cybersource.FlexMicroformSdk.pdb
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\Cybersource.FlexMicroformSdk.dll.config
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\Cybersource.FlexMicroformSdk.dll
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\Cybersource.FlexMicroformSdk.pdb
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\Newtonsoft.Json.dll
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.Buffers.dll
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.Memory.dll
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.Numerics.Vectors.dll
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.Text.Encodings.Web.dll
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.Text.Json.dll
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.ValueTuple.dll
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\Newtonsoft.Json.xml
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.Buffers.xml
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.Memory.xml
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.Numerics.Vectors.xml
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.Text.Encodings.Web.xml
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.Text.Json.xml
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\bin\Debug\System.ValueTuple.xml
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\obj\Debug\Cybersource.FlexMicroformSdk.csproj.AssemblyReference.cache
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\obj\Debug\Cybersource.FlexMicroformSdk.ReasonCode.resources
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\obj\Debug\Cybersource.FlexMicroformSdk.csproj.GenerateResource.cache
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\obj\Debug\Cybersource.FlexMicroformSdk.csproj.CoreCompileInputs.cache
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\obj\Debug\Cybersource.FlexMicroformSdk.csproj.CopyComplete
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\obj\Debug\Cybersource.FlexMicroformSdk.dll
+C:\Dev\Code for Farukkh\BookingDotCom\Cybersource.FlexMicroformSdk\obj\Debug\Cybersource.FlexMicroformSdk.pdb
