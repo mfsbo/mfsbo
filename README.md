@@ -6,11 +6,11 @@
 
 ### Streak
 #### Current Work
-[![Work Streak](https://streak-stats.demolab.com/?user=mfsbo)]
+[![Work Streak](https://streak-stats.demolab.com/?user=mfsbo)
 #### Previous Jobs
-[![Work Streak](https://streak-stats.demolab.com/?user=farrukhcw)]
+[![Work Streak](https://streak-stats.demolab.com/?user=farrukhcw)
 #### Personal
-[![Personal Streak](https://streak-stats.demolab.com/?user=farrukhsubhani)]
+[![Personal Streak](https://streak-stats.demolab.com/?user=farrukhsubhani)
 
 [![Farrukh's GitHub stats](https://github-readme-stats.vercel.app/api?username=mfsbo&hide=stars&count_private=true)](https://github.com/mfsbo/)
 
