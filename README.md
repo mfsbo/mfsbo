@@ -5,8 +5,11 @@
 - ✉️ Reach me on farrukh at bookingonline dot co dot uk
 
 ### Streak
+#### Current Work
 [![Work Streak](https://streak-stats.demolab.com/?user=mfsbo)](https://git.io/streak-stats)
+#### Previous Jobs
 [![Work Streak](https://streak-stats.demolab.com/?user=farrukhcw)](https://git.io/streak-stats)
+#### Personal
 [![Personal Streak](https://streak-stats.demolab.com/?user=farrukhsubhani)](https://git.io/streak-stats)
 
 [![Farrukh's GitHub stats](https://github-readme-stats.vercel.app/api?username=mfsbo&hide=stars&count_private=true)](https://github.com/mfsbo/)
