@@ -4,6 +4,11 @@
 - https://mfsbo.github.io/mfsbo/
 - ✉️ Reach me on farrukh at bookingonline dot co dot uk
 
+### Streak
+[![Work Streak](https://streak-stats.demolab.com/?user=mfsbo)](https://git.io/streak-stats)
+[![Work Streak](https://streak-stats.demolab.com/?user=farrukhcw)](https://git.io/streak-stats)
+[![Personal Streak](https://streak-stats.demolab.com/?user=farrukhsubhani)](https://git.io/streak-stats)
+
 [![Farrukh's GitHub stats](https://github-readme-stats.vercel.app/api?username=mfsbo&hide=stars&count_private=true)](https://github.com/mfsbo/)
 
 <!--START_SECTION:waka-->
