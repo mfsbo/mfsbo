@@ -21,7 +21,7 @@
 
 **🐱 My GitHub Data** 
 
-> 📦 882.2 kB Used in GitHub's Storage 
+> 📦 882.3 kB Used in GitHub's Storage 
  > 
 > 🏆 841 Contributions in the Year 2023
  > 
@@ -58,14 +58,13 @@ Sunday                   2440 commits        ░░░░░░░░░░░�
 🕑︎ Time Zone: Europe/London
 
 💬 Programming Languages: 
-Batchfile                10 mins             ████████████████████░░░░░   81.73 % 
-Other                    2 mins              █████░░░░░░░░░░░░░░░░░░░░   18.27 % 
+No Activity Tracked This Week
 
 🔥 Editors: 
-VS Code                  12 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Windows                  12 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 **I Mostly Code in HTML** 
@@ -81,7 +80,7 @@ Python                   1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 03/06/2023 00:26:30 UTC
+ Last Updated on 04/06/2023 00:27:33 UTC
 <!--END_SECTION:waka-->
 <!--
 **mfsbo/mfsbo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
