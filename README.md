@@ -15,9 +15,9 @@
 [![Farrukh's GitHub stats](https://github-readme-stats.vercel.app/api?username=mfsbo&hide=stars&count_private=true)](https://github.com/mfsbo/)
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-332%20hrs%2030%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-337%20hrs%2043%20mins-blue)
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-12-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-9-blue)
 
 **🐱 My GitHub Data** 
 
@@ -58,17 +58,17 @@ Sunday                   2558 commits        ░░░░░░░░░░░�
 🕑︎ Time Zone: Europe/London
 
 💬 Programming Languages: 
-C#                       8 hrs 10 mins       ████████████░░░░░░░░░░░░░   46.74 % 
-ASP.NET                  5 hrs 41 mins       ████████░░░░░░░░░░░░░░░░░   32.58 % 
-Binary                   3 hrs 7 mins        ████░░░░░░░░░░░░░░░░░░░░░   17.86 % 
-JavaScript               27 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.60 % 
-Other                    2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.21 % 
+C#                       9 hrs 21 mins       █████████████░░░░░░░░░░░░   50.89 % 
+ASP.NET                  4 hrs 42 mins       ██████░░░░░░░░░░░░░░░░░░░   25.62 % 
+Binary                   3 hrs 49 mins       █████░░░░░░░░░░░░░░░░░░░░   20.80 % 
+JavaScript               27 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.47 % 
+Other                    2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.22 % 
 
 🔥 Editors: 
-Visual Studio            17 hrs 29 mins      █████████████████████████   100.00 % 
+Visual Studio            18 hrs 24 mins      █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Windows                  17 hrs 29 mins      █████████████████████████   100.00 % 
+Windows                  18 hrs 24 mins      █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in HTML** 
@@ -84,7 +84,7 @@ Python                   1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 24/06/2023 00:41:40 UTC
+ Last Updated on 25/06/2023 00:44:35 UTC
 <!--END_SECTION:waka-->
 <!--
 **mfsbo/mfsbo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
