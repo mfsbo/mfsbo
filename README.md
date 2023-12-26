@@ -15,7 +15,7 @@
 [![Farrukh's GitHub stats](https://github-readme-stats.vercel.app/api?username=mfsbo&hide=stars&count_private=true)](https://github.com/mfsbo/)
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-576%20hrs%2026%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-576%20hrs%2027%20mins-blue)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue)
 
@@ -58,7 +58,8 @@ Sunday                   2673 commits        ░░░░░░░░░░░�
 🕑︎ Time Zone: Europe/London
 
 💬 Programming Languages: 
-Text                     19 mins             █████████████████████████   100.00 % 
+Text                     19 mins             ████████████████████████░   96.43 % 
+Other                    0 secs              █░░░░░░░░░░░░░░░░░░░░░░░░   03.57 % 
 
 🔥 Editors: 
 VS Code                  19 mins             █████████████████████████   100.00 % 
@@ -80,7 +81,7 @@ Shell                    1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 24/12/2023 00:29:11 UTC
+ Last Updated on 26/12/2023 00:30:53 UTC
 <!--END_SECTION:waka-->
 <!--
 **mfsbo/mfsbo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
