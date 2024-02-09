@@ -15,15 +15,15 @@
 [![Farrukh's GitHub stats](https://github-readme-stats.vercel.app/api?username=mfsbo&hide=stars&count_private=true)](https://github.com/mfsbo/)
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-576%20hrs%2040%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-577%20hrs%203%20mins-blue)
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-8-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-1-blue)
 
 **🐱 My GitHub Data** 
 
 > 📦 883.0 kB Used in GitHub's Storage 
  > 
-> 🏆 151 Contributions in the Year 2024
+> 🏆 152 Contributions in the Year 2024
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -58,13 +58,14 @@ Sunday                   2687 commits        ░░░░░░░░░░░�
 🕑︎ Time Zone: Europe/London
 
 💬 Programming Languages: 
-No Activity Tracked This Week
+Bash                     14 mins             ████████████████░░░░░░░░░   63.13 % 
+PowerShell               8 mins              █████████░░░░░░░░░░░░░░░░   36.87 % 
 
 🔥 Editors: 
-No Activity Tracked This Week
+VS Code                  23 mins             █████████████████████████   100.00 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+Windows                  23 mins             █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in HTML** 
@@ -80,7 +81,7 @@ Shell                    1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 08/02/2024 00:34:39 UTC
+ Last Updated on 09/02/2024 00:28:05 UTC
 <!--END_SECTION:waka-->
 <!--
 **mfsbo/mfsbo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
