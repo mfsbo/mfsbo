@@ -58,17 +58,13 @@ Sunday                   2699 commits        ░░░░░░░░░░░�
 🕑︎ Time Zone: Europe/London
 
 💬 Programming Languages: 
-Markdown                 15 mins             ████████░░░░░░░░░░░░░░░░░   32.39 % 
-Git Config               7 mins              ████░░░░░░░░░░░░░░░░░░░░░   15.58 % 
-YAML                     5 mins              ███░░░░░░░░░░░░░░░░░░░░░░   12.17 % 
-Vue.js                   4 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   09.26 % 
-TypeScript               3 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   07.76 % 
+No Activity Tracked This Week
 
 🔥 Editors: 
-VS Code                  48 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Windows                  48 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 **I Mostly Code in HTML** 
@@ -84,7 +80,7 @@ Shell                    1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 23/02/2024 00:24:09 UTC
+ Last Updated on 24/02/2024 00:23:13 UTC
 <!--END_SECTION:waka-->
 <!--
 **mfsbo/mfsbo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
