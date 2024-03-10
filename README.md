@@ -15,7 +15,7 @@
 [![Farrukh's GitHub stats](https://github-readme-stats.vercel.app/api?username=mfsbo&hide=stars&count_private=true)](https://github.com/mfsbo/)
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-577%20hrs%2058%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-578%20hrs%2011%20mins-blue)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue)
 
@@ -58,16 +58,17 @@ Sunday                   2669 commits        ░░░░░░░░░░░�
 🕑︎ Time Zone: Europe/London
 
 💬 Programming Languages: 
-Other                    2 mins              █████████████████░░░░░░░░   68.37 % 
-C#                       0 secs              █████░░░░░░░░░░░░░░░░░░░░   20.37 % 
-Binary                   0 secs              ███░░░░░░░░░░░░░░░░░░░░░░   11.26 % 
+ASP.NET                  10 mins             ████████████████░░░░░░░░░   63.51 % 
+Other                    2 mins              █████░░░░░░░░░░░░░░░░░░░░   18.37 % 
+C#                       2 mins              ████░░░░░░░░░░░░░░░░░░░░░   16.01 % 
+Binary                   0 secs              █░░░░░░░░░░░░░░░░░░░░░░░░   02.11 % 
 
 🔥 Editors: 
-VS Code                  2 mins              █████████████████░░░░░░░░   68.37 % 
-Visual Studio            0 secs              ████████░░░░░░░░░░░░░░░░░   31.63 % 
+Visual Studio            13 mins             ██████████████████████░░░   87.17 % 
+VS Code                  2 mins              ███░░░░░░░░░░░░░░░░░░░░░░   12.83 % 
 
 💻 Operating System: 
-Windows                  2 mins              █████████████████████████   100.00 % 
+Windows                  15 mins             █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in HTML** 
@@ -83,7 +84,7 @@ Shell                    1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 09/03/2024 00:30:14 UTC
+ Last Updated on 10/03/2024 00:23:30 UTC
 <!--END_SECTION:waka-->
 <!--
 **mfsbo/mfsbo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
