@@ -22,7 +22,7 @@ title: mfsbo
 description: >- # this means to ignore newlines until "baseurl:"
   Details coming soon
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://mfsbo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mfsbo.github.io/mfsbo" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  mfsbo
 
 # Build settings
