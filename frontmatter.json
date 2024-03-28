@@ -1,0 +1,17 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "jekyll",
+  "frontMatter.content.publicFolder": "assets",
+  "frontMatter.preview.host": "http://localhost:4000",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "_drafts",
+      "path": "[[workspace]]/website/_drafts"
+    },
+    {
+      "title": "_posts",
+      "path": "[[workspace]]/website/_posts"
+    }
+  ],
+  "frontMatter.git.enabled": true
+}
