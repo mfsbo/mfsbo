@@ -3,6 +3,18 @@
 
 @import "minima";
 
-.post-meta{
-  color: purple;
+.post-meta, a {
+  color: #800080;
+}
+
+.footer-col-wrapper{
+  color: #525252;
+}
+
+a:visited {
+  color: #86007b;
+}
+
+a:hover{
+  color: #450086;
 }
