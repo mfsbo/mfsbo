@@ -15,11 +15,13 @@
 [![Farrukh's GitHub stats](https://github-readme-stats.vercel.app/api?username=mfsbo&hide=stars&count_private=true)](https://github.com/mfsbo/)
 
 <!--START_SECTION:waka-->
+![Code Time](http://img.shields.io/badge/Code%20Time-612%20hrs%2034%20mins-blue)
+
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-7-blue)
 
 **🐱 My GitHub Data** 
 
-> 📦 883.9 kB Used in GitHub's Storage 
+> 📦 885.5 kB Used in GitHub's Storage 
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -30,8 +32,8 @@
 **I Mostly Code in HTML** 
 
 ```text
-HTML                     42 repos            ███████░░░░░░░░░░░░░░░░░░   26.42 % 
-TypeScript               31 repos            █████░░░░░░░░░░░░░░░░░░░░   19.50 % 
+HTML                     41 repos            ██████░░░░░░░░░░░░░░░░░░░   25.79 % 
+TypeScript               32 repos            █████░░░░░░░░░░░░░░░░░░░░   20.13 % 
 JavaScript               23 repos            ████░░░░░░░░░░░░░░░░░░░░░   14.47 % 
 C#                       23 repos            ████░░░░░░░░░░░░░░░░░░░░░   14.47 % 
 Vue                      21 repos            ███░░░░░░░░░░░░░░░░░░░░░░   13.21 % 
@@ -40,7 +42,7 @@ Vue                      21 repos            ███░░░░░░░░�
 
 
 
- Last Updated on 11/04/2024 00:26:42 UTC
+ Last Updated on 12/04/2024 00:24:09 UTC
 <!--END_SECTION:waka-->
 <!--
 **mfsbo/mfsbo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
