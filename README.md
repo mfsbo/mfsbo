@@ -15,7 +15,7 @@
 [![Farrukh's GitHub stats](https://github-readme-stats.vercel.app/api?username=mfsbo&hide=stars&count_private=true)](https://github.com/mfsbo/)
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-616%20hrs%2026%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-616%20hrs%2053%20mins-blue)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue)
 
@@ -23,7 +23,7 @@
 
 > 📦 885.7 kB Used in GitHub's Storage 
  > 
-> 🏆 1,154 Contributions in the Year 2024
+> 🏆 1,157 Contributions in the Year 2024
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -58,16 +58,16 @@ Sunday                   2749 commits        ░░░░░░░░░░░�
 🕑︎ Time Zone: Europe/London
 
 💬 Programming Languages: 
-Binary                   12 mins             ████████████████░░░░░░░░░   63.83 % 
-C#                       4 mins              ██████░░░░░░░░░░░░░░░░░░░   22.94 % 
-ASP.NET                  1 min               ███░░░░░░░░░░░░░░░░░░░░░░   10.02 % 
-Other                    0 secs              █░░░░░░░░░░░░░░░░░░░░░░░░   03.21 % 
+C#                       32 mins             █████████████████░░░░░░░░   68.07 % 
+Binary                   12 mins             ███████░░░░░░░░░░░░░░░░░░   26.44 % 
+ASP.NET                  1 min               █░░░░░░░░░░░░░░░░░░░░░░░░   04.16 % 
+Other                    0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.33 % 
 
 🔥 Editors: 
-Visual Studio            19 mins             █████████████████████████   100.00 % 
+Visual Studio            47 mins             █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Windows                  19 mins             █████████████████████████   100.00 % 
+Windows                  47 mins             █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in HTML** 
@@ -83,7 +83,7 @@ Batchfile                1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 27/04/2024 00:24:48 UTC
+ Last Updated on 28/04/2024 00:25:55 UTC
 <!--END_SECTION:waka-->
 <!--
 **mfsbo/mfsbo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
