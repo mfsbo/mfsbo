@@ -15,7 +15,7 @@
 [![Farrukh's GitHub stats](https://github-readme-stats.vercel.app/api?username=mfsbo&hide=stars&count_private=true)](https://github.com/mfsbo/)
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-619%20hrs%2014%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-620%20hrs%2059%20mins-blue)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue)
 
@@ -23,7 +23,7 @@
 
 > 📦 885.7 kB Used in GitHub's Storage 
  > 
-> 🏆 1,397 Contributions in the Year 2024
+> 🏆 1,400 Contributions in the Year 2024
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -58,18 +58,18 @@ Sunday                   2759 commits        ░░░░░░░░░░░�
 🕑︎ Time Zone: Europe/London
 
 💬 Programming Languages: 
-CSHTML                   18 mins             ████████████░░░░░░░░░░░░░   48.84 % 
-JavaScript               8 mins              ██████░░░░░░░░░░░░░░░░░░░   23.02 % 
-JSON                     6 mins              ████░░░░░░░░░░░░░░░░░░░░░   16.87 % 
-C#                       1 min               █░░░░░░░░░░░░░░░░░░░░░░░░   05.03 % 
-CSS                      1 min               █░░░░░░░░░░░░░░░░░░░░░░░░   02.69 % 
+C#                       53 mins             █████████░░░░░░░░░░░░░░░░   36.98 % 
+Binary                   29 mins             █████░░░░░░░░░░░░░░░░░░░░   20.71 % 
+ASP.NET                  23 mins             ████░░░░░░░░░░░░░░░░░░░░░   16.35 % 
+CSHTML                   18 mins             ███░░░░░░░░░░░░░░░░░░░░░░   13.23 % 
+JavaScript               8 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   06.23 % 
 
 🔥 Editors: 
-Visual Studio            31 mins             ████████████████████░░░░░   81.76 % 
-VS Code                  7 mins              █████░░░░░░░░░░░░░░░░░░░░   18.24 % 
+Visual Studio            2 hrs 16 mins       ████████████████████████░   95.06 % 
+VS Code                  7 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.94 % 
 
 💻 Operating System: 
-Windows                  38 mins             █████████████████████████   100.00 % 
+Windows                  2 hrs 23 mins       █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in HTML** 
@@ -85,7 +85,7 @@ Batchfile                1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 11/05/2024 00:25:46 UTC
+ Last Updated on 12/05/2024 00:33:27 UTC
 <!--END_SECTION:waka-->
 <!--
 **mfsbo/mfsbo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
