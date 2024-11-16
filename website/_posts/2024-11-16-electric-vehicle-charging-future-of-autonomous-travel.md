@@ -48,7 +48,7 @@ Other charging networks including white label (offered in different stores or of
 
 ## Future of Charging
 
-I can extrapolate few steps of what I think currrent development in this space is going however it wont be as realistic. So I am going to go with what I feel would be best based on how much I know about this space and what else can be done.
+I can extrapolate few steps of what I think current development in this space is going however it wont be as realistic. So I am going to go with what I feel would be best based on how much I know about this space and what else can be done.
 
 - Car and Charger should be able to identify each other including charge speed, energy required and payment method. Currently tesla has it via app but same protocol should apply to all apps and cars. This should be a standard interface that any car with charging can speak to charger and any charger can identify if its space is occupied by a unidentified object or a known car.
 - Software and Hardware interfaces for chargers should be standard and open source to allow navigational AI to make better informed decision based on time, location, cost.
