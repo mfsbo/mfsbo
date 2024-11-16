@@ -4,7 +4,13 @@
 @import "minima";
 
 .post-meta, a {
-  color: #800080;
+  color: #be00be;
+  }
+  
+  .post-content a {
+    color: #d102d1;
+    text-decoration: underline;
+    font-weight: bold;
 }
 .rss-subscribe a{
   text-decoration: underline;
@@ -15,9 +21,9 @@
 }
 
 a:visited {
-  color: #86007b;
+  color: #bb0099;
 }
 
 a:hover{
-  color: #450086;
+  color: #5500bb;
 }
