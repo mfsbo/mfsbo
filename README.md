@@ -15,7 +15,7 @@
 [![Farrukh's GitHub stats](https://github-readme-stats.vercel.app/api?username=mfsbo&hide=stars&count_private=true)](https://github.com/mfsbo/)
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-969%20hrs%203%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-969%20hrs%2040%20mins-blue)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-1-blue)
 
@@ -58,17 +58,17 @@ Sunday                   4447 commits        ░░░░░░░░░░░�
 🕑︎ Time Zone: Europe/London
 
 💬 Programming Languages: 
-Vue.js                   3 hrs 14 mins       █████████░░░░░░░░░░░░░░░░   36.43 % 
-TypeScript               2 hrs 33 mins       ███████░░░░░░░░░░░░░░░░░░   28.68 % 
-Markdown                 1 hr 18 mins        ████░░░░░░░░░░░░░░░░░░░░░   14.67 % 
-JavaScript               51 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.65 % 
-JSON                     34 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.37 % 
+Vue.js                   3 hrs 14 mins       █████████░░░░░░░░░░░░░░░░   34.13 % 
+TypeScript               2 hrs 47 mins       ███████░░░░░░░░░░░░░░░░░░   29.34 % 
+Markdown                 1 hr 18 mins        ███░░░░░░░░░░░░░░░░░░░░░░   13.75 % 
+JSON                     55 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.64 % 
+JavaScript               51 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.05 % 
 
 🔥 Editors: 
-VS Code                  8 hrs 55 mins       █████████████████████████   100.00 % 
+VS Code                  9 hrs 31 mins       █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Windows                  8 hrs 55 mins       █████████████████████████   100.00 % 
+Windows                  9 hrs 31 mins       █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in HTML** 
@@ -84,7 +84,7 @@ PHP                      2 repos             ░░░░░░░░░░░�
 
 
 
- Last Updated on 19/07/2025 00:46:04 UTC
+ Last Updated on 20/07/2025 00:45:16 UTC
 <!--END_SECTION:waka-->
 <!--
 **mfsbo/mfsbo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
