@@ -1,0 +1,17 @@
+# Jekyll build artifacts and caches (root)
+/_site/
+/.jekyll-cache/
+/.sass-cache/
+/.jekyll-metadata
+/vendor/
+
+# Node / future Nuxt outputs
+/node_modules/
+/.nuxt/
+/.output/
+/dist/
+/dist-ssr/
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
