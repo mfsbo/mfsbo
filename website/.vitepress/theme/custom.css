@@ -35,3 +35,44 @@
 .vp-code {
   background-color: #f1f5f9;
 }
+
+/* Keep dark/light mode toggle and social links visible on tablet and mobile */
+@media (max-width: 959px) {
+  /* Ensure social links (GitHub) are always visible */
+  .VPNavBarSocialLinks {
+    display: flex !important;
+  }
+  
+  /* Ensure appearance toggle (dark/light mode) is always visible */
+  .VPNavBarAppearance {
+    display: block !important;
+  }
+  
+  /* Adjust navbar layout to accommodate visible elements */
+  .VPNavBar .VPNavBarTitle {
+    flex-shrink: 1;
+  }
+  
+  /* Make sure the hamburger menu and visible elements don't overlap */
+  .VPNavBarHamburger {
+    margin-left: 8px;
+  }
+}
+
+/* Additional responsive adjustments for smaller screens */
+@media (max-width: 767px) {
+  /* Ensure elements remain visible even on mobile */
+  .VPNavBarSocialLinks {
+    display: flex !important;
+  }
+  
+  .VPNavBarAppearance {
+    display: block !important;
+  }
+  
+  /* Compact spacing for mobile */
+  .VPNavBarSocialLinks .VPSocialLink {
+    width: 32px;
+    height: 32px;
+  }
+}
