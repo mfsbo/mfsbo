@@ -36,43 +36,45 @@
   background-color: #f1f5f9;
 }
 
-/* Keep dark/light mode toggle and social links visible on tablet and mobile */
-@media (max-width: 959px) {
-  /* Ensure social links (GitHub) are always visible */
-  .VPNavBarSocialLinks {
-    display: flex !important;
-  }
-  
-  /* Ensure appearance toggle (dark/light mode) is always visible */
-  .VPNavBarAppearance {
-    display: block !important;
-  }
-  
-  /* Adjust navbar layout to accommodate visible elements */
-  .VPNavBar .VPNavBarTitle {
-    flex-shrink: 1;
-  }
-  
-  /* Make sure the hamburger menu and visible elements don't overlap */
+/* Mobile navigation improvements */
+@media (max-width: 767px) {
+  /* Ensure mobile menu is easily accessible */
   .VPNavBarHamburger {
-    margin-left: 8px;
+    margin-right: 12px;
+  }
+  
+  /* Keep appearance toggle accessible in mobile menu */
+  .VPNavScreenAppearance {
+    order: -1;
+    margin-bottom: 12px;
+    padding: 8px 24px;
+  }
+  
+  /* Improve mobile menu item spacing */
+  .VPNavScreenMenuLink {
+    padding: 12px 24px;
+    font-weight: 500;
+  }
+  
+  /* Add visual separator for appearance toggle */
+  .VPNavScreenAppearance::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: var(--vp-c-divider);
+    margin: 12px 0 0 0;
   }
 }
 
-/* Additional responsive adjustments for smaller screens */
-@media (max-width: 767px) {
-  /* Ensure elements remain visible even on mobile */
-  .VPNavBarSocialLinks {
-    display: flex !important;
+/* Tablet responsive improvements */
+@media (max-width: 959px) and (min-width: 768px) {
+  /* On tablets, keep the menu compact but functional */
+  .VPNavBarMenu {
+    gap: 16px;
   }
   
-  .VPNavBarAppearance {
-    display: block !important;
-  }
-  
-  /* Compact spacing for mobile */
-  .VPNavBarSocialLinks .VPSocialLink {
-    width: 32px;
-    height: 32px;
+  /* Ensure hamburger menu is properly spaced */
+  .VPNavBarHamburger {
+    margin-left: 16px;
   }
 }
