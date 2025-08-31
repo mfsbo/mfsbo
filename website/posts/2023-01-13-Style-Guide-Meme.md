@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Contributing to Worst Style Guide Ever"
 date:   2023-01-13 19:26:12 +0100
 categories: personal

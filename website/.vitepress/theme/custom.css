@@ -1,0 +1,37 @@
+/* Custom styles for mfsbo blog */
+
+:root {
+  --vp-c-brand-1: #2563eb;
+  --vp-c-brand-2: #1d4ed8;
+  --vp-c-brand-3: #1e40af;
+  
+  --vp-home-hero-name-color: #2563eb;
+  --vp-home-hero-name-background: linear-gradient(120deg, #2563eb 30%, #1d4ed8);
+}
+
+/* Footer customization */
+.VPFooter {
+  background-color: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Content area spacing */
+.VPContent {
+  padding-top: 2rem;
+}
+
+/* Custom header styling */
+.VPNav {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+}
+
+/* Typography improvements */
+.vp-doc h1, .vp-doc h2, .vp-doc h3 {
+  color: #1e293b;
+}
+
+/* Code blocks */
+.vp-code {
+  background-color: #f1f5f9;
+}

@@ -6,7 +6,6 @@ preview: ""
 tags: []
 categories: []
 type: default
-layout: post
 ---
 ## 5 years of development life
 

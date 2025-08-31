@@ -6,7 +6,6 @@ preview: ""
 tags: []
 categories: []
 type: default
-layout: post
 ---
 
 I kind of listen regularly to Web Boss and Scott Tolinski's podcast, Syntax. I like the way they talk about web development and the way they explain things. I think they are doing a great job.

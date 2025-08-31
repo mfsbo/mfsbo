@@ -1,5 +1,18 @@
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "other",
+  "frontMatter.content.publicFolder": "public",
+  "frontMatter.preview.host": "http://localhost:5173",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Posts",
+      "path": "[[workspace]]/website-vite/posts"
+    },
+    {
+      "title": "Pages",  
+      "path": "[[workspace]]/website-vite"
+    }
+  ],
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "default",
@@ -46,17 +59,5 @@
       ]
     }
   ],
-  "frontMatter.framework.id": "jekyll",
-  "frontMatter.content.publicFolder": "assets",
-  "frontMatter.content.pageFolders": [
-    {
-      "title": "_drafts",
-      "path": "[[workspace]]/_drafts",
-      "originalPath": "[[workspace]]/_drafts"
-    },
-    {
-      "title": "_posts",
-      "path": "[[workspace]]/_posts"
-    }
-  ]
+  "frontMatter.git.enabled": true
 }

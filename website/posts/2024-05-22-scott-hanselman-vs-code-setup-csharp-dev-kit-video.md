@@ -6,7 +6,6 @@ preview: ""
 tags: []
 categories: []
 type: default
-layout: post
 ---
 
 I was watching Scott Hanselman's recent video on the C# Dev Kit and I noticed some of the structure of shows on podcast and code. This was in VS Code

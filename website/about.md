@@ -1,10 +1,4 @@
----
-layout: page
-title: About
-permalink: /about/
----
-
-## About
+# About
 
 I am on Stackoverflow for more than a decade now as [user](https://stackoverflow.com/users/923695/farrukh-subhani). I spend most of time on Github under [`mfsbo`](https://github.com/mfsbo/) however I also contribute under [`farrukhsubhani`](https://github.com/farrukhsubhani) and [`farrukhcw`](https://github.com/farrukhcw)
 
@@ -21,5 +15,3 @@ I have worked in retail, risk management, banking, ecommerce, healthcare, proper
 With AI coming into equation I have worked with OpenAI API for generative text and images and have done projects where GPT-3 and GPT-4.5 can be swapped to see difference in cost and quality of generated content. I collect a lot of data from Google Analytics that I have sampled for vector databases and training for niche industries.
 
 I started to use Azure and AWS from 2014 and have deployed, managed and scaled applications on both platforms. I started using Github Actions to deploy via FTP, Docker and Static Sites. I use Powershell, Github CLI, Azure CLI and AWS CLI for automation and deployments.
-
-

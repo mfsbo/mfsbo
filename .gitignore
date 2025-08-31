@@ -1,9 +1,14 @@
-# Jekyll build artifacts and caches (root)
+# Jekyll build artifacts and caches (backup)
+website-jekyll-backup/
 /_site/
 /.jekyll-cache/
 /.sass-cache/
 /.jekyll-metadata
 /vendor/
+
+# VitePress build artifacts
+website/.vitepress/cache
+website/.vitepress/dist
 
 # Node / future Nuxt outputs
 /node_modules/

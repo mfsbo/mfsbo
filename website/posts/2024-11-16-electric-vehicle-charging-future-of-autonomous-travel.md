@@ -6,7 +6,6 @@ preview: ""
 tags: []
 categories: []
 type: default
-layout: post
 ---
 
 ## My Experience with Electric Vehicles

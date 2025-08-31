@@ -1,0 +1,27 @@
+{
+  "name": "website-vite",
+  "version": "1.0.0",
+  "description": "mfsbo blog powered by VitePress",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "keywords": [
+    "blog",
+    "vitepress",
+    "mfsbo"
+  ],
+  "author": "mfsbo",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.20"
+  },
+  "volta": {
+    "node": "24.7.0",
+    "npm": "11.5.2"
+  }
+}
