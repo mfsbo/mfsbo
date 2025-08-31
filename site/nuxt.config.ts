@@ -36,6 +36,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    preset: process.env.NITRO_PRESET || undefined,
     prerender: {
       crawlLinks: true,
       routes: [
@@ -54,7 +55,6 @@ export default defineNuxtConfig({
   },
 
   robots: {
-    allow: ['/'],
-    robotsEnabledValue: false  // Disable robots.txt generation since we have our own
+    robotsTxt: false  // Disable robots.txt generation since we have our own
   }
 })

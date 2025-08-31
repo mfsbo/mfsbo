@@ -9,7 +9,7 @@
       <h2 class="text-2xl font-semibold text-gray-900 mb-6">Recent Posts</h2>
       <div class="space-y-6">
         <article 
-          v-for="post in posts" 
+          v-for="post in blogPosts" 
           :key="post._path" 
           class="border-b border-gray-200 pb-6"
         >
@@ -57,7 +57,7 @@ const { data: posts } = await queryContent('/')
 // Filter out the about page and only get posts
 const blogPosts = posts.filter(post => 
   post._path !== '/about' && 
-  post._path.includes('/20') // posts have date in path
+  post._path.match(/\/\d{4}\/\d{2}\/\d{2}\//) // posts have date in path
 )
 
 function formatDate(dateString) {
