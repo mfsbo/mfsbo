@@ -36,45 +36,51 @@
   background-color: #f1f5f9;
 }
 
-/* Mobile navigation improvements */
-@media (max-width: 767px) {
-  /* Ensure mobile menu is easily accessible */
+/* Extend tablet navigation behavior to mobile */
+/* This makes mobile show nav links + dropdown instead of hamburger menu */
+@media (max-width: 959px) {
+  /* Show navigation menu on mobile like tablet */
+  .VPNavBarMenu {
+    display: flex !important;
+    gap: 12px;
+  }
+  
+  /* Hide hamburger menu on mobile */
   .VPNavBarHamburger {
+    display: none !important;
+  }
+  
+  /* Ensure extra navigation button is visible */
+  .VPNavBarExtra {
+    display: flex !important;
+  }
+  
+  /* Improve spacing for smaller screens */
+  .VPNavBarMenuLink {
+    padding: 0 8px;
+    font-size: 14px;
+  }
+  
+  /* Optimize dropdown for mobile */
+  .VPFlyout {
     margin-right: 12px;
-  }
-  
-  /* Keep appearance toggle accessible in mobile menu */
-  .VPNavScreenAppearance {
-    order: -1;
-    margin-bottom: 12px;
-    padding: 8px 24px;
-  }
-  
-  /* Improve mobile menu item spacing */
-  .VPNavScreenMenuLink {
-    padding: 12px 24px;
-    font-weight: 500;
-  }
-  
-  /* Add visual separator for appearance toggle */
-  .VPNavScreenAppearance::after {
-    content: '';
-    display: block;
-    height: 1px;
-    background: var(--vp-c-divider);
-    margin: 12px 0 0 0;
   }
 }
 
-/* Tablet responsive improvements */
-@media (max-width: 959px) and (min-width: 768px) {
-  /* On tablets, keep the menu compact but functional */
+/* Additional mobile-specific optimizations */
+@media (max-width: 767px) {
+  /* Tighter spacing on very small screens */
   .VPNavBarMenu {
-    gap: 16px;
+    gap: 8px;
   }
   
-  /* Ensure hamburger menu is properly spaced */
-  .VPNavBarHamburger {
-    margin-left: 16px;
+  .VPNavBarMenuLink {
+    padding: 0 6px;
+    font-size: 13px;
+  }
+  
+  /* Ensure site title doesn't take too much space */
+  .VPNavBarTitle {
+    flex-shrink: 1;
   }
 }
