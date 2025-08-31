@@ -35,3 +35,79 @@
 .vp-code {
   background-color: #f1f5f9;
 }
+
+/* Dark mode overrides for better contrast */
+.dark {
+  /* Footer dark mode */
+  .VPFooter {
+    background-color: #1a1a1a;
+    border-top: 1px solid #3a3a3a;
+  }
+  
+  /* Navigation dark mode */
+  .VPNav {
+    background-color: rgba(26, 26, 26, 0.95);
+  }
+  
+  /* Typography dark mode - ensure high contrast for all headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: #f1f5f9 !important;
+  }
+  
+  /* Main content area typography */
+  main h1, main h2, main h3, main h4, main h5, main h6 {
+    color: #f1f5f9 !important;
+  }
+  
+  /* Body text and paragraphs with high contrast */
+  p {
+    color: #d1d5db !important;
+  }
+  
+  main p {
+    color: #d1d5db !important;
+  }
+  
+  /* Links with proper contrast */
+  a {
+    color: #60a5fa !important;
+  }
+  
+  a:hover {
+    color: #93c5fd !important;
+  }
+  
+  /* Code blocks dark mode */
+  .vp-code {
+    background-color: #2d3748;
+    color: #e2e8f0;
+  }
+  
+  /* List items */
+  li {
+    color: #d1d5db !important;
+  }
+  
+  /* Strong text */
+  strong {
+    color: #f1f5f9 !important;
+  }
+  
+  /* Emphasis text */
+  em {
+    color: #9ca3af !important;
+  }
+  
+  /* Sidebar navigation */
+  nav h2 {
+    color: #e2e8f0 !important;
+  }
+  
+  nav a {
+    color: #9ca3af !important;
+  }
+  
+  nav a:hover {
+    color: #d1d5db !important;
+  }
+}
