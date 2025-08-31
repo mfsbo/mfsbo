@@ -1,7 +1,5 @@
 ---
 layout: home
-title: mfsbo
-titleTemplate: Random thoughts on Tech
 
 hero:
   name: mfsbo
