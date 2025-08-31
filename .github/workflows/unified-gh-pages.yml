@@ -69,8 +69,9 @@ jobs:
           # Create final site directory
           mkdir -p _unified_site
           
-          # Copy Jekyll site to root
-          cp -r _temp_site/* _unified_site/
+          # Copy Jekyll site to /mfsbo subdirectory
+          mkdir -p _unified_site/mfsbo
+          cp -r _temp_site/* _unified_site/mfsbo/
           
           # Copy Nuxt site to /nuxt subdirectory
           mkdir -p _unified_site/nuxt
@@ -81,8 +82,8 @@ jobs:
           find _unified_site -type f | head -20
           echo "..."
           echo "Total files: $(find _unified_site -type f | wc -l)"
-          echo "Jekyll root files: $(find _unified_site -maxdepth 1 -name "*.html" | wc -l)"
-          echo "Nuxt files: $(find _unified_site/nuxt -type f | wc -l)"
+          echo "Jekyll files in /mfsbo: $(find _unified_site/mfsbo -type f | wc -l)"
+          echo "Nuxt files in /nuxt: $(find _unified_site/nuxt -type f | wc -l)"
       
       # Setup Pages and upload artifact
       - name: Setup Pages
