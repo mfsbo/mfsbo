@@ -12,6 +12,10 @@
 /dist/
 /dist-ssr/
 
+# Unified workflow temp directories
+/_temp_site/
+/_unified_site/
+
 # OS/editor junk
 .DS_Store
 Thumbs.db

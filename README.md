@@ -1,7 +1,8 @@
 ### Hey 👋
 
 - 🏃 Working and Learning not at the same time...
-- https://mfsbo.github.io/mfsbo/
+- 🌐 **Jekyll Blog**: https://mfsbo.github.io/mfsbo/
+- 🚀 **Nuxt App**: https://mfsbo.github.io/mfsbo/nuxt/
 - ✉️ Reach me on farrukh at bookingonline dot co dot uk
 
 ### Streak
