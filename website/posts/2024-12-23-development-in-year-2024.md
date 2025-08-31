@@ -5,8 +5,7 @@ date: 2024-12-23T01:01:41.600Z
 preview: ""
 tags: []
 categories: []
-type: post
-layout: default
+type: default
 ---
 At end of 2024 I have been dominantly working in front end however have touch based on backend in .net 8/9 along with Azure and AWS clouds.
 
