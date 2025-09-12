@@ -26,3 +26,6 @@ website/_site/
 # OS/editor junk
 .DS_Store
 Thumbs.db
+
+# Playwrite mcp
+/.playwrite-mcp/
