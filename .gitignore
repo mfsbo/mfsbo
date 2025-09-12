@@ -1,9 +1,20 @@
+# Jekyll build artifacts and caches (backup)
+website-jekyll-backup/
+/_site/
+/.jekyll-cache/
+/.sass-cache/
+/.jekyll-metadata
+/vendor/
+
 # VitePress build artifacts
-.vitepress/cache
-.vitepress/dist
+website/.vitepress/cache
+website/.vitepress/dist
 
 # Front Matter CMS local database
 /.frontmatter/
+
+# Legacy site output (from Jekyll/Eleventy)
+website/_site/
 
 # Node / future Nuxt outputs
 /node_modules/
