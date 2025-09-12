@@ -17,6 +17,8 @@
   "author": "mfsbo",
   "license": "ISC",
   "devDependencies": {
+    "gulp": "^5.0.1",
+    "typescript": "^5.9.2",
     "vitepress": "^1.6.4",
     "vue": "^3.5.20"
   },
