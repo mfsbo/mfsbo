@@ -1,15 +1,21 @@
-### Hey 👋
+# Hey 👋
 
 - 🏃 Working and Learning not at the same time...
-- https://mfsbo.github.io/mfsbo/
+- <https://mfsbo.github.io/>
 - ✉️ Reach me on farrukh at bookingonline dot co dot uk
 
-### Streak
-#### Current Work
+## Streak
+
+### Current Work
+
 ![Work Streak](https://streak-stats.demolab.com/?user=mfsbo)
-#### Previous Jobs
+
+### Previous Jobs
+
 ![Work Streak](https://streak-stats.demolab.com/?user=farrukhcw)
-#### Personal
+
+### Personal
+
 ![Personal Streak](https://streak-stats.demolab.com/?user=farrukhsubhani)
 
 [![Farrukh's GitHub stats](https://github-readme-stats.vercel.app/api?username=mfsbo&hide=stars&count_private=true)](https://github.com/mfsbo/)
@@ -19,19 +25,19 @@
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-130-blue)
 
-**🐱 My GitHub Data** 
+**🐱 My GitHub Data**
 
-> 📦 888.8 kB Used in GitHub's Storage 
- > 
+> 📦 888.8 kB Used in GitHub's Storage
+ >
 > 🏆 2,916 Contributions in the Year 2025
- > 
+ >
 > 🚫 Not Opted to Hire
- > 
-> 📜 13 Public Repositories 
- > 
-> 🔑 81 Private Repositories 
- > 
-**I'm an Early 🐤** 
+ >
+> 📜 13 Public Repositories
+ >
+> 🔑 81 Private Repositories
+ >
+**I'm an Early 🐤**
 
 ```text
 🌞 Morning                75246 commits       ██████░░░░░░░░░░░░░░░░░░░   22.27 % 
@@ -39,7 +45,8 @@
 🌃 Evening                40928 commits       ███░░░░░░░░░░░░░░░░░░░░░░   12.11 % 
 🌙 Night                  4932 commits        ░░░░░░░░░░░░░░░░░░░░░░░░░   01.46 % 
 ```
-📅 **I'm Most Productive on Tuesday** 
+
+📅 **I'm Most Productive on Tuesday**
 
 ```text
 Monday                   55699 commits       ████░░░░░░░░░░░░░░░░░░░░░   16.49 % 
@@ -51,8 +58,7 @@ Saturday                 4401 commits        ░░░░░░░░░░░�
 Sunday                   5278 commits        ░░░░░░░░░░░░░░░░░░░░░░░░░   01.56 % 
 ```
 
-
-📊 **This Week I Spent My Time On** 
+📊 **This Week I Spent My Time On**
 
 ```text
 🕑︎ Time Zone: Europe/London
@@ -71,7 +77,7 @@ VS Code                  1 hr 34 mins        ███████████�
 Windows                  1 hr 34 mins        █████████████████████████   100.00 % 
 ```
 
-**I Mostly Code in TypeScript** 
+**I Mostly Code in TypeScript**
 
 ```text
 TypeScript               43 repos            ██████░░░░░░░░░░░░░░░░░░░   22.63 % 
@@ -80,9 +86,6 @@ C#                       33 repos            ████░░░░░░░�
 JavaScript               27 repos            ████░░░░░░░░░░░░░░░░░░░░░   14.21 % 
 PHP                      2 repos             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.05 % 
 ```
-
-
-
 
  Last Updated on 12/09/2025 00:50:17 UTC
 <!--END_SECTION:waka-->

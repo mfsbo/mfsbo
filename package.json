@@ -1,5 +1,5 @@
 {
-  "name": "website-vite",
+  "name": "mfsbo-site",
   "version": "1.0.0",
   "description": "mfsbo blog powered by VitePress",
   "type": "module",
@@ -16,6 +16,7 @@
   ],
   "author": "mfsbo",
   "license": "ISC",
+  "homepage": "https://mfsbo.github.io/mfsbo/",
   "devDependencies": {
     "vitepress": "^1.6.4",
     "vue": "^3.5.20"
