@@ -18,3 +18,9 @@ All blog posts from the mfsbo tech blog.
 ## 2022
 
 - [Farrukh Subhani @ Booking Online](/posts/2022-10-19-welcome-to-jekyll.md) - *October 19, 2022*
+
+<script setup>
+import PostList from '../.vitepress/theme/components/PostList.vue'
+</script>
+
+<PostList />
