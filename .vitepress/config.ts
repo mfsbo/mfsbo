@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'mfsbo',
   description: 'Random thoughts on Tech',
+  // Serve the site from the root (https://mfsbo.github.io/)
   base: '/',
 
   head: [
@@ -12,6 +13,7 @@ export default defineConfig({
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
     ['link', { rel: 'manifest', href: '/site.webmanifest' }],
     ['meta', { name: 'theme-color', content: '#ffffff' }],
+    // Canonical should point to the site root
     ['link', { rel: 'canonical', href: 'https://mfsbo.github.io/' }]
   ],
 
@@ -33,6 +35,7 @@ export default defineConfig({
   },
 
   sitemap: {
+    // sitemap hostname for user/org root Pages
     hostname: 'https://mfsbo.github.io/'
   }
 })
