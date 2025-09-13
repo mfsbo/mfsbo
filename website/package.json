@@ -25,5 +25,8 @@
   "volta": {
     "node": "24.7.0",
     "npm": "11.5.2"
+  },
+  "dependencies": {
+    "@vueuse/core": "^13.9.0"
   }
 }

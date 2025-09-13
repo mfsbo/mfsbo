@@ -1,4 +1,4 @@
-import { createContentLoader } from 'vitepress'
+import { createContentLoader} from 'vitepress'
 
 // Define a TypeScript interface for your post data
 export interface Post {
@@ -14,15 +14,15 @@ export interface Post {
 declare const data: Post[];
 export { data };
 
-  
-export default createContentLoader(["./posts/**/*.md"], {
+
+export default createContentLoader(["./posts/**/2*.md"], {
   // Add a transform function to restructure the data
   transform(raw) {
     return raw
-      .map(({ url, frontmatter }) => ({
+      .map(({ url, frontmatter }): Post => ({
         url,
         title: frontmatter.title,
-        date: frontmatter.date,
+        date: new Date(frontmatter.date),
         description: frontmatter.description,
         category: frontmatter.category,
         tags: frontmatter.tags || [],
