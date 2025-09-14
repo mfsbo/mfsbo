@@ -1,6 +1,6 @@
 ---
 title:  "Contributing to Worst Style Guide Ever"
-date:   2023-01-13 19:26:12 +0100
+date:   2023-01-13T17:00:10.550Z
 categories: personal
 ---
 
