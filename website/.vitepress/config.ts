@@ -18,7 +18,8 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Posts', link: '/posts/' },
-      { text: 'About', link: '/about' }
+      { text: 'About', link: '/about' },
+      { text: 'CV', link: '/cv' }
     ],
 
     socialLinks: [
