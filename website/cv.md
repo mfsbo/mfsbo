@@ -40,7 +40,7 @@ meta:
 - Mentor through architectural intention—not just code critique.
 - Advocate measurable small improvements over speculative rewrites.
 
-## Recent Modernisation Arc (Condensed)
+## Recent Modernisation Arc
 
 | Phase | Before | After / Direction |
 | ----- | ------ | ----------------- |
@@ -51,14 +51,15 @@ meta:
 | Architecture | Postback & page logic | Clear separation: API, domain, integration layers |
 | Review & Quality | Ad-hoc | Structured code review guidelines + onboarding docs |
 
-## Selected Leadership Contributions
+## Leadership Contributions
 
+- Introduced development that encourages self organised teams to work on migrations in parallel with feature delivery.
 - Introduced Storybook-driven component workflow improving UI consistency & reusability.
 - Built lightweight architecture documentation sets (diagrams + ADR stubs) reducing onboarding time.
 - Established telemetry starting points (naming, log shape conventions).
 - Guided phased replacement of legacy segments without halting feature delivery.
 
-## Condensed Experience Map
+## Experience Map
 
 | Role | Organisation | Span | Focus |
 | ---- | ------------ | ---- | ----- |
@@ -66,7 +67,7 @@ meta:
 | IT Operations Manager | Countrywide Plc | 2015–2019 | Team leadership, stack modernisation, Azure shift |
 | Director | Subhani Brothers Ltd | 2009–Present | Team Leadership, bespoke systems, Cloud Transformations |
 
-## Focused Skills Grid
+## Skills Grid
 
 | Category | Keywords |
 | -------- | -------- |
