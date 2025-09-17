@@ -1,31 +1,40 @@
 <template>
   <h1>Posts</h1>
   <p>All blog posts from the mfsbo tech blog.</p>
-  <div v-for="year in years" :key="year" class="year-section">
+  <div v-if="posts.length === 0" class="empty-state">
+    <p>No posts published yet. Check back soon.</p>
+  </div>
+  <div v-else v-for="year in years" :key="year" class="year-section">
     <h2>{{ year }}</h2>
     <ul>
-    <li v-for="post in posts.filter(p => p.year === year)" :key="post.url" class="post-item">
-        <a :href="getUrlWithBase(post.url)">{{ post.title }}</a> - <small class="post-date">{{ formatDate(post.date) }}</small>
-    </li>
+      <li
+        v-for="post in postsByYear(year)"
+        :key="post.url"
+        class="post-item"
+      >
+        <a :href="withBasePath(post.url)">{{ post.title }}</a>
+        - <small class="post-date">{{ post.displayDate }}</small>
+      </li>
     </ul>
   </div>
 </template>
 
 <script setup lang="ts">
-import { data as posts } from '../posts.data';
-import { useData } from 'vitepress';
-import { useDateFormat} from '@vueuse/core';
+import { data as posts, Post } from '../posts.data';
+import { useData, withBase } from 'vitepress';
+
+// Site base (already includes trailing slash in your config)
 const { site } = useData();
-const base = site.value.base || '/mfsbo/';
-const getUrlWithBase = (url: string) => base + url.replace(/^\//, '');
-// function to format date to given format
-const format= "MMM DD"
-const formatDate = (date: Date) => {
-  return useDateFormat(date,format);
-};
-// Get unique Year from all posts in an array
-const years = [...new Set(posts.map(post => post.year))];
-years.sort((a, b) => b - a); // Sort years in descending order
+const base = site.value.base || '/';
+
+// Utility for base-safe path building (fallback if withBase changes in API)
+const withBasePath = (url: string) => withBase ? withBase(url) : base + url.replace(/^\//, '');
+
+// Years list derived once (descending)
+const years = [...new Set(posts.map(p => p.year))].sort((a, b) => b - a);
+
+// Memoized filter helper (simple enough—inline function)
+const postsByYear = (year: number): Post[] => posts.filter(p => p.year === year);
 </script>
 
 <style scoped>
@@ -38,5 +47,10 @@ years.sort((a, b) => b - a); // Sort years in descending order
 /* Different colour of date on dark and light mode */
 .post-date {
   color: var(--vp-c-text-secondary);
+}
+.empty-state {
+  padding: 1em 0;
+  font-style: italic;
+  color: var(--vp-c-text-2);
 }
 </style>

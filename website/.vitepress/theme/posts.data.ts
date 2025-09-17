@@ -1,33 +1,38 @@
-import { createContentLoader} from 'vitepress'
+import { createContentLoader } from 'vitepress'
 
-// Define a TypeScript interface for your post data
 export interface Post {
   url: string;
   title: string;
-  date: Date;
+  date: Date;              
   description: string;
   category: string;
   tags: string[];
-  year: number;
+  year: number;            
+  displayDate: string;     
 }
 
 declare const data: Post[];
 export { data };
 
+const displayDateFormatter = new Intl.DateTimeFormat('en-US', { month: 'short', day: '2-digit' });
 
 export default createContentLoader(["./posts/**/2*.md"], {
-  // Add a transform function to restructure the data
-  transform(raw) {
+  transform(raw): Post[] {
     return raw
-      .map(({ url, frontmatter }): Post => ({
-        url,
-        title: frontmatter.title,
-        date: new Date(frontmatter.date),
-        description: frontmatter.description,
-        category: frontmatter.category,
-        tags: frontmatter.tags || [],
-        year: new Date(frontmatter.date).getFullYear(),
-      }))
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+      .map(({ url, frontmatter }): Post => {
+        const dateObj = new Date(frontmatter.date);
+        return {
+          url,
+          title: frontmatter.title,
+          date: dateObj,
+            // Provide fallback empty strings for optional frontmatter fields if they are undefined
+          description: frontmatter.description ?? '',
+          category: frontmatter.category ?? '',
+          tags: frontmatter.tags || [],
+          year: dateObj.getFullYear(),
+          displayDate: displayDateFormatter.format(dateObj)
+        };
+      })
+      .sort((a, b) => b.date.getTime() - a.date.getTime());
   }
 })
