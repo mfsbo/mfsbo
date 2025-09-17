@@ -9,10 +9,35 @@
   --vp-home-hero-name-background: linear-gradient(120deg, #2563eb 30%, #1d4ed8);
 }
 
+/* Ensure AAA contrast for nav/menu and links in light mode */
+
+/* Nav and link colors using only VitePress variables */
+.VPNavBarMenuLink,
+.VPNavBarTitle,
+.VPNavBarMenu {
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg);
+}
+
+
+.VPNavBarMenuLink.active,
+a:active,
+a:visited {
+  color: var(--vp-c-brand-2);
+}
+
+a {
+  color: var(--vp-c-brand-1);
+}
+
+a:hover {
+  color: var(--vp-c-brand-2);
+}
 /* Footer customization */
+
 .VPFooter {
-  background-color: #f8fafc;
-  border-top: 1px solid #e2e8f0;
+  background-color: var(--vp-c-bg);
+  border-top: 1px solid var(--vp-c-divider);
 }
 
 /* Content area spacing */
@@ -27,87 +52,86 @@
 }
 
 /* Typography improvements */
+
 .vp-doc h1, .vp-doc h2, .vp-doc h3 {
-  color: #1e293b;
+  color: var(--vp-c-text-1);
 }
 
 /* Code blocks */
+
 .vp-code {
-  background-color: #f1f5f9;
+  background-color: var(--vp-c-bg-alt);
+  color: var(--vp-c-text-1);
 }
 
 /* Dark mode overrides for better contrast */
 .dark {
   /* Footer dark mode */
   .VPFooter {
-    background-color: #1a1a1a;
-    border-top: 1px solid #3a3a3a;
+    background-color: var(--vp-c-bg);
+    border-top: 1px solid var(--vp-c-divider);
   }
-  
+
   /* Navigation dark mode */
   .VPNav {
-    background-color: rgba(26, 26, 26, 0.95);
+    background-color: var(--vp-c-bg);
   }
-  
-  /* Typography dark mode - ensure high contrast for all headings */
-  h1, h2, h3, h4, h5, h6 {
-    color: #f1f5f9 !important;
+
+  /* Nav/menu and links in dark mode using only VitePress variables */
+  .VPNavBarMenuLink,
+  .VPNavBarTitle,
+  .VPNavBarMenu {
+    color: var(--vp-c-text-1);
+    background: var(--vp-c-bg);
   }
-  
-  /* Main content area typography */
-  main h1, main h2, main h3, main h4, main h5, main h6 {
-    color: #f1f5f9 !important;
+
+  .VPNavBarMenuLink.active,
+  a:active,
+  a:visited {
+    color: var(--vp-c-brand-2);
   }
-  
-  /* Body text and paragraphs with high contrast */
-  p {
-    color: #d1d5db !important;
-  }
-  
-  main p {
-    color: #d1d5db !important;
-  }
-  
-  /* Links with proper contrast */
+
   a {
-    color: #60a5fa !important;
+    color: var(--vp-c-brand-1);
   }
-  
+
   a:hover {
-    color: #93c5fd !important;
+    color: var(--vp-c-brand-2);
   }
-  
-  /* Code blocks dark mode */
-  .vp-code {
-    background-color: #2d3748;
-    color: #e2e8f0;
+
+  /* Typography dark mode */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--vp-c-text-1);
   }
-  
-  /* List items */
-  li {
-    color: #d1d5db !important;
+
+  main h1, main h2, main h3, main h4, main h5, main h6 {
+    color: var(--vp-c-text-1);
   }
-  
-  /* Strong text */
-  strong {
-    color: #f1f5f9 !important;
+
+  p, main p, li, strong {
+    color: var(--vp-c-text-2);
   }
-  
-  /* Emphasis text */
+
   em {
-    color: #9ca3af !important;
+    color: var(--vp-c-text-3);
   }
-  
+
   /* Sidebar navigation */
   nav h2 {
-    color: #e2e8f0 !important;
+    color: var(--vp-c-text-1);
   }
-  
+
   nav a {
-    color: #9ca3af !important;
+    color: var(--vp-c-text-2);
   }
-  
+
   nav a:hover {
-    color: #d1d5db !important;
+    color: var(--vp-c-text-1);
+  }
+
+  /* Code blocks dark mode */
+  .vp-code {
+    background-color: var(--vp-c-bg-alt);
+    color: var(--vp-c-text-1);
   }
 }
