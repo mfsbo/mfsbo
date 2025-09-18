@@ -27,7 +27,7 @@ In June 2019 I shifted gears, stepped into a new stack reality, and began what b
 
 Early tactical objective: extract the team from heavy WebForms + jQuery dependence while still delivering features. Introduced incremental Vue islands inside ASPX pages to build confidence and shrink the gap to a modern SPA mindset. Began sowing seeds for automation and cleaner deployment paths.
 
-![2019 Contributions for mfsbo](https://res.cloudinary.com/dfph3xsla/image/upload/f_auto,q_auto,dpr_auto,w_688/v1718059398/github/mfsbo/fogmykndenu9krtbg7oo.png)
+<ResponsiveImage version="v1718059398" publicId="github/mfsbo/fogmykndenu9krtbg7oo.png" alt="2019 Contributions for mfsbo" />
 
 ---
 
@@ -35,7 +35,7 @@ Early tactical objective: extract the team from heavy WebForms + jQuery dependen
 
 A health interruption briefly slowed momentum, but the interruption forced prioritisation. Contributed to external JavaScript object export tooling that later became a multiplier internally. Summer output drove multiple launches; began deeper alignment with Microsoft/Azure ecosystems (Teams integration, internal process migration). Early automation experiments started shaping future velocity.
 
-![2020 Contributions for mfsbo](https://res.cloudinary.com/dfph3xsla/image/upload/f_auto,q_auto,dpr_auto,w_688/v1718059398/github/mfsbo/ykzxnj2ymwlmdmzyvneu.png)
+<ResponsiveImage version="v1718059398" publicId="github/mfsbo/ykzxnj2ymwlmdmzyvneu.png" alt="2020 Contributions for mfsbo" />
 
 ---
 
@@ -43,7 +43,7 @@ A health interruption briefly slowed momentum, but the interruption forced prior
 
 Focus moved to migrating larger functional areas. Breaks were used deliberately to avoid burnout while ramping up automation around build, release, and environment provisioning. Team and office reshuffles required adaptive knowledge transfer. The groundwork for later telemetry and standard infra patterns started forming conceptually.
 
-![2021 Contributions for mfsbo](https://res.cloudinary.com/dfph3xsla/image/upload/f_auto,q_auto,dpr_auto,w_688/v1718059398/github/mfsbo/eko6okdlf51cunozgkph.png)
+<ResponsiveImage version="v1718059398" publicId="github/mfsbo/eko6okdlf51cunozgkph.png" alt="2021 Contributions for mfsbo" />
 
 ---
 
@@ -51,7 +51,7 @@ Focus moved to migrating larger functional areas. Breaks were used deliberately 
 
 Energy redirected into stabilising and extending legacy systems under customer pressure. This meant tactical delivery over pure refactor freedom. Weekend bursts helped unblock longer-term improvements. Drew clearer boundaries by late Q3/Q4 to make space for platform shifts. Mentorship and internal teaching dominated more of the time budget.
 
-![2022 Contributions for mfsbo](https://res.cloudinary.com/dfph3xsla/image/upload/f_auto,q_auto,dpr_auto,w_688/v1718059398/github/mfsbo/euzzzdtiquassbcs9xus.png)
+<ResponsiveImage version="v1718059398" publicId="github/mfsbo/euzzzdtiquassbcs9xus.png" alt="2022 Contributions for mfsbo" />
 
 ---
 
@@ -59,7 +59,7 @@ Energy redirected into stabilising and extending legacy systems under customer p
 
 The plan set in late 2022 pivoted: more enablement, more scripting, more operational uplift. Heavy investment in PowerShell automation for release pipelines, provisioning, and environment repeatability. AI tooling started augmenting rote scripting and documentation generation. Late‑year contribution density reflects prior automation compounding, not raw hours. Operations + build server orchestration + feature throughput coexisted effectively.
 
-![2023 Contributions for mfsbo](https://res.cloudinary.com/dfph3xsla/image/upload/f_auto,q_auto,dpr_auto,w_688/v1718059398/github/mfsbo/qj5jkeik78lz0p9kfccc.png)
+<ResponsiveImage version="v1718059398" publicId="github/mfsbo/qj5jkeik78lz0p9kfccc.png" alt="2023 Contributions for mfsbo" />
 
 ---
 
@@ -75,10 +75,10 @@ A mission reset: unblock infra debt that had constrained 2023 velocity. Parallel
 Two views of contributions: an in‑year snapshot and a full‑year consolidated chart.
 
 Existing partial-year snapshot:
-![2024 Contributions for mfsbo (snapshot)](https://res.cloudinary.com/dfph3xsla/image/upload/f_auto,q_auto,dpr_auto,w_688/v1718059398/github/mfsbo/yeslqjdzigsmuhqxuehb.png)
+<ResponsiveImage version="v1718059398" publicId="github/mfsbo/yeslqjdzigsmuhqxuehb.png" alt="2024 Contributions for mfsbo (snapshot)" />
 
 Full‑year view:
-![2024 Contributions for mfsbo (full year)](https://res.cloudinary.com/dfph3xsla/image/upload/f_auto,q_auto,dpr_auto,w_688/v1758154297/github/mfsbo/2024_oi44y4.png)
+<ResponsiveImage version="v1758154297" publicId="github/mfsbo/2024_oi44y4.png" alt="2024 Contributions for mfsbo (full year)" />
 
 ---
 
@@ -95,7 +95,7 @@ This year marks consolidation rather than pure expansion:
 - Security & Governance: Shift-left scanning integration, dependency health reporting, secrets hygiene reinforcement.
 
 Full-year (to-date / rolling) contributions:
-![2025 Contributions for mfsbo (full year)](https://res.cloudinary.com/dfph3xsla/image/upload/f_auto,q_auto,dpr_auto,w_688/v1758154469/github/mfsbo/2025_zfcxph.png)
+<ResponsiveImage version="v1758154469" publicId="github/mfsbo/2025_zfcxph.png" alt="2025 Contributions for mfsbo (full year)" />
 
 ---
 
