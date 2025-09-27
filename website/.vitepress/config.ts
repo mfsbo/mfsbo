@@ -11,7 +11,12 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/mfsbo/favicon-16x16.png' }],
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/mfsbo/apple-touch-icon.png' }],
     ['link', { rel: 'manifest', href: '/mfsbo/site.webmanifest' }],
-    ['meta', { name: 'theme-color', content: '#ffffff' }]
+    ['meta', { name: 'theme-color', content: '#ffffff' }],
+    ['script', {},`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KZVX2HFD');`],
   ],
 
   themeConfig: {
