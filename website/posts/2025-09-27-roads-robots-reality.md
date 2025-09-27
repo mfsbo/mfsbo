@@ -25,10 +25,15 @@ This article gives you the essentials—no jargon—on the **UK & EU rules**, ho
 
 - **Cars are getting smarter.** Modern driver-assist features keep lanes, change lanes, and handle traffic in limited situations. Europe uses a shared rulebook that says **when** and **where** that’s allowed, so the same safety standards apply across many countries. [1](#references)  
 - **Roads are getting smarter too.** Traffic lights, cameras, and road-side units are being upgraded to detect hazards, smooth traffic, and log events—so decisions aren’t only inside the car, they’re also in the **infrastructure**. (Think: junctions that “see” more than you do in the rain.) *This is where your local “smart traffic” works fit in—laying the groundwork for vehicles to coordinate better with streets and signals.*  
-
-  ![Smart traffic upgrade in progress — sensors and controls being installed on a junction](https://res.cloudinary.com/dfph3xsla/image/upload/v1758960219/github/mfsbo/Screenshot_2025-09-27_090139_c29syt.png)
+<!-- markdownlint-disable MD033 -->
+  <picture>
+    <!-- Commas encoded to avoid build tooling parsing issues -->
+    <source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2Cw_1400%2Cdpr_auto/github/mfsbo/Screenshot_2025-09-27_090139_c29syt.png">
+    <img src="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2Cw_900%2Cdpr_auto/github/mfsbo/Screenshot_2025-09-27_090139_c29syt.png" alt="Smart traffic upgrade in progress — sensors and controls being installed on a junction" loading="lazy" decoding="async">
+  </picture>
 
   *Sensors, signals and roadside units being installed at a junction — examples of the infrastructure work that helps vehicles and streets coordinate.*
+
 - **The goal is “handover by design.”** In some places and conditions, the system takes the strain; outside those limits, it hands back to the driver. Europe’s rules require a clearly defined **operational design domain**—i.e., where it’s safe to automate. [2](#references)
 
 ## 2) The rulebook in plain English (UK & EU)
