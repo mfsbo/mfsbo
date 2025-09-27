@@ -83,7 +83,8 @@ meta:
 
 ## Research
 
-- Image Processing: "Low Latency Mitigation of Rain Induced Noise in Images" (IET CVMP 2008) — DOI: 10.1049/cp:20081070
+- Image Processing: "Low Latency Mitigation of Rain Induced Noise in Images" (IET CVMP 2008) — [https://ieeexplore.ieee.org/document/4778734](https://ieeexplore.ieee.org/document/4778734)
+- MPhil Thesis: "Image Sequence Analysis for Noise Removal" (The University of Manchester)
 
 ## Education
 
