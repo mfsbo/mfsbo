@@ -44,8 +44,9 @@ meta:
 
 | Phase | Before | After / Direction |
 | ----- | ------ | ----------------- |
+| AI Team Workflow | ChatGPT + manual | Copilot/Claud, CLIs, Instructions, Prompts, Chat modes, tools |
 | UI & Delivery | WebForms + jQuery | Vue 3 + TypeScript + Vite, modular front-end layers |
-| Backend | .NET Framework / PHP mix | .NET Core (6→9 path) + API-first layering |
+| Backend | .NET Framework / PHP mix | .NET Core (6→10 path) + API-first layering |
 | Deployments | Manual multi-day windows | CI/CD, <1 day platform cycles, minutes for FE |
 | Source Control | Fragmented / absent | Unified GitHub workflows + branching standards |
 | Architecture | Postback & page logic | Clear separation: API, domain, integration layers |
@@ -71,6 +72,7 @@ meta:
 
 | Category | Keywords |
 | -------- | -------- |
+| AI/LLMs | Open AI API, MCP Servers, FastApi, LangChain, Image(2D) and Video Processing(3D early estimation) |
 | Backend & APIs | C#, .NET Core, REST, OpenAPI, Laravel, Lumen |
 | Frontend | Vue 3, React, Angular, TypeScript, Component Architecture, Storybook |
 | Cloud & DevOps | Azure, AWS, GitHub Actions, Docker (select), PowerShell, Automation |
