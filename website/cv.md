@@ -32,7 +32,7 @@ meta:
 | Frontend Evolution | Vue/TypeScript migration, component systems, Storybook adoption |
 | Observability | Telemetry baselines, structured logging readiness |
 
-## Principal / EM Positioning
+## Team Building & Enablement
 
 - Enable platform scalability by reducing hidden coupling and clarifying integration contracts.
 - Raise engineering leverage: codify decisions (ADRs), strengthen review culture, remove toil.
@@ -85,9 +85,11 @@ meta:
 
 ## Education
 
+- Postgraduate Research — The University of Manchester (noise in image sequences)
 - MPhil Computer Engineering — The University of Manchester (image processing research)
-- MSc Computer Engineering — NUST
-- BCE Computer Engineering — COMSATS
+- MSc Computer Engineering — NUST, Islamabad
+- BCE Computer Engineering — COMSATS, Islamabad
+- FSc Pre-Engineering — IMCB F-8/4 Islamabad
 
 ## Contact
 
