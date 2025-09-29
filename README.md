@@ -15,7 +15,9 @@
 [![Farrukh's GitHub stats](https://github-readme-stats.vercel.app/api?username=mfsbo&hide=stars&count_private=true)](https://github.com/mfsbo/)
 
 <!--START_SECTION:waka-->
-![Profile Views](http://img.shields.io/badge/Profile%20Views-43-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-1%2C062%20hrs%2042%20mins-blue)
+
+![Profile Views](http://img.shields.io/badge/Profile%20Views-9-blue)
 
 **🐱 My GitHub Data** 
 
@@ -42,7 +44,7 @@ PHP                      2 repos             ░░░░░░░░░░░�
 
 
 
- Last Updated on 28/09/2025 01:09:09 UTC
+ Last Updated on 29/09/2025 01:01:04 UTC
 <!--END_SECTION:waka-->
 <!--
 **mfsbo/mfsbo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
