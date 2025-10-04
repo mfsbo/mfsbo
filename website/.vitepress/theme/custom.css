@@ -33,31 +33,6 @@
   border-radius: 4px;
 }
 
-/* Fix mobile menu z-index and ensure it appears above content */
-.VPNavScreen {
-  z-index: 60 !important;
-}
-
-/* Ensure mobile menu backdrop blocks interaction with page content */
-.VPNavScreenAppearance {
-  z-index: 59 !important;
-}
-
-/* When navbar has screen-open class, disable pointer events on ALL elements except nav */
-body:has(.VPNavBar.screen-open) * {
-  pointer-events: none !important;
-}
-
-/* But restore pointer events on the navigation elements */
-body:has(.VPNavBar.screen-open) .VPNav,
-body:has(.VPNavBar.screen-open) .VPNav *,
-body:has(.VPNavBar.screen-open) .VPNavBar,
-body:has(.VPNavBar.screen-open) .VPNavBar *,
-body:has(.VPNavBar.screen-open) .VPNavScreen,
-body:has(.VPNavBar.screen-open) .VPNavScreen * {
-  pointer-events: auto !important;
-}
-
 /* Improve mobile menu link visibility and touch targets */
 @media (max-width: 768px) {
   .VPNavScreenMenuLink,
