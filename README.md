@@ -15,13 +15,15 @@
 [![Farrukh's GitHub stats](https://github-readme-stats.vercel.app/api?username=mfsbo&hide=stars&count_private=true)](https://github.com/mfsbo/)
 
 <!--START_SECTION:waka-->
+![Code Time](http://img.shields.io/badge/Code%20Time-1%2C063%20hrs%2032%20mins-blue)
+
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-2-blue)
 
 **🐱 My GitHub Data** 
 
 > 📦 888.9 kB Used in GitHub's Storage 
  > 
-> 🏆 3,127 Contributions in the Year 2025
+> 🏆 3,161 Contributions in the Year 2025
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -29,6 +31,45 @@
  > 
 > 🔑 81 Private Repositories 
  > 
+**I'm an Early 🐤** 
+
+```text
+🌞 Morning                77301 commits       ██████░░░░░░░░░░░░░░░░░░░   22.26 % 
+🌆 Daytime                223010 commits      ████████████████░░░░░░░░░   64.21 % 
+🌃 Evening                41875 commits       ███░░░░░░░░░░░░░░░░░░░░░░   12.06 % 
+🌙 Night                  5147 commits        ░░░░░░░░░░░░░░░░░░░░░░░░░   01.48 % 
+```
+📅 **I'm Most Productive on Tuesday** 
+
+```text
+Monday                   57142 commits       ████░░░░░░░░░░░░░░░░░░░░░   16.45 % 
+Tuesday                  78318 commits       ██████░░░░░░░░░░░░░░░░░░░   22.55 % 
+Wednesday                75410 commits       █████░░░░░░░░░░░░░░░░░░░░   21.71 % 
+Thursday                 68393 commits       █████░░░░░░░░░░░░░░░░░░░░   19.69 % 
+Friday                   58091 commits       ████░░░░░░░░░░░░░░░░░░░░░   16.72 % 
+Saturday                 4543 commits        ░░░░░░░░░░░░░░░░░░░░░░░░░   01.31 % 
+Sunday                   5436 commits        ░░░░░░░░░░░░░░░░░░░░░░░░░   01.57 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Europe/London
+
+💬 Programming Languages: 
+Markdown                 2 hrs 16 mins       ████████████████░░░░░░░░░   64.87 % 
+JSON                     52 mins             ██████░░░░░░░░░░░░░░░░░░░   25.16 % 
+TypeScript               20 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.93 % 
+CSS                      0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.04 % 
+
+🔥 Editors: 
+VS Code                  3 hrs 29 mins       █████████████████████████   100.00 % 
+
+💻 Operating System: 
+Windows                  3 hrs 29 mins       █████████████████████████   100.00 % 
+```
+
 **I Mostly Code in TypeScript** 
 
 ```text
@@ -42,7 +83,7 @@ PHP                      2 repos             ░░░░░░░░░░░�
 
 
 
- Last Updated on 03/10/2025 00:57:02 UTC
+ Last Updated on 04/10/2025 01:07:34 UTC
 <!--END_SECTION:waka-->
 <!--
 **mfsbo/mfsbo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
