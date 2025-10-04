@@ -33,27 +33,6 @@
   border-radius: 4px;
 }
 
-/* Ensure mobile menu overlay sits above content */
-.VPNavScreen {
-  z-index: 60;
-}
-
-/* Disable clicks everywhere except navigation when mobile menu is open */
-body:has(.VPNavBar.screen-open) #app,
-body:has(.VPNavBar.screen-open) .Layout,
-body:has(.VPNavBar.screen-open) #VPContent,
-body:has(.VPNavBar.screen-open) .VPNavBar {
-  pointer-events: none !important;
-}
-
-/* Re-enable clicks on navigation and all its descendants */
-body:has(.VPNavBar.screen-open) .VPNav,
-body:has(.VPNavBar.screen-open) .VPNav *,
-body:has(.VPNavBar.screen-open) .VPNavScreen,
-body:has(.VPNavBar.screen-open) .VPNavScreen * {
-  pointer-events: auto !important;
-}
-
 /* Improve mobile menu link visibility and touch targets */
 @media (max-width: 768px) {
   .VPNavScreenMenuLink,
