@@ -9,6 +9,75 @@
   --vp-home-hero-name-background: linear-gradient(120deg, #2563eb 30%, #1d4ed8);
 }
 
+/* Accessibility improvements */
+
+/* Improve skip to content link visibility */
+.VPSkipLink {
+  padding: 12px 16px;
+  font-weight: 600;
+  background: var(--vp-c-brand-1);
+  color: white;
+  border-radius: 4px;
+}
+
+.VPSkipLink:focus {
+  outline: 3px solid var(--vp-c-brand-2);
+  outline-offset: 2px;
+}
+
+/* Ensure mobile menu button has clear focus state */
+.VPNavBarHamburger:focus-visible,
+.VPFlyout button:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Fix mobile menu z-index and ensure it appears above content */
+.VPNavScreen {
+  z-index: 60 !important;
+}
+
+/* Ensure mobile menu backdrop blocks interaction with page content */
+.VPNavScreenAppearance {
+  z-index: 59 !important;
+}
+
+/* When navbar has screen-open class, disable pointer events on ALL elements except nav */
+body:has(.VPNavBar.screen-open) * {
+  pointer-events: none !important;
+}
+
+/* But restore pointer events on the navigation elements */
+body:has(.VPNavBar.screen-open) .VPNav,
+body:has(.VPNavBar.screen-open) .VPNav *,
+body:has(.VPNavBar.screen-open) .VPNavBar,
+body:has(.VPNavBar.screen-open) .VPNavBar *,
+body:has(.VPNavBar.screen-open) .VPNavScreen,
+body:has(.VPNavBar.screen-open) .VPNavScreen * {
+  pointer-events: auto !important;
+}
+
+/* Improve mobile menu link visibility and touch targets */
+@media (max-width: 768px) {
+  .VPNavScreenMenuLink,
+  .VPNavScreen nav a {
+    padding: 16px 24px;
+    min-height: 44px; /* WCAG minimum touch target size */
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Ensure adequate contrast for all navigation items */
+.VPNavBarMenuLink:focus-visible,
+.VPNavScreenMenuLink:focus-visible,
+nav a:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+  background: var(--vp-c-bg-soft);
+}
+
 /* Ensure AAA contrast for nav/menu and links in light mode */
 
 /* Nav and link colors using only VitePress variables */

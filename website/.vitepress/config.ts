@@ -21,20 +21,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Posts', link: '/posts/' },
-      { text: 'About', link: '/about' },
-      { text: 'CV', link: '/cv' }
+      { text: 'Home', link: '/', ariaLabel: 'Go to home page' },
+      { text: 'Posts', link: '/posts/', ariaLabel: 'View all blog posts' },
+      { text: 'About', link: '/about', ariaLabel: 'Learn more about mfsbo' },
+      { text: 'CV', link: '/cv', ariaLabel: 'View curriculum vitae' }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/mfsbo' }
+      { icon: 'github', link: 'https://github.com/mfsbo', ariaLabel: 'Visit mfsbo on GitHub' }
     ],
 
     footer: {
       message: 'Random thoughts on Tech',
       copyright: 'Copyright © 2024 mfsbo'
-    }
+    },
+
+    // Improve mobile menu accessibility
+    sidebarMenuLabel: 'Menu',
+    returnToTopLabel: 'Return to top',
+    darkModeSwitchLabel: 'Appearance',
+    lightModeSwitchTitle: 'Switch to light theme',
+    darkModeSwitchTitle: 'Switch to dark theme'
   },
 
   sitemap: {
