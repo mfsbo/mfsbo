@@ -33,8 +33,22 @@
   border-radius: 4px;
 }
 
-/* Improve mobile menu link visibility and touch targets */
+/* Fix mobile menu overlay to cover content when open */
 @media (max-width: 768px) {
+  /* Ensure mobile menu screen properly covers the viewport */
+  .VPNavScreen {
+    position: fixed;
+    top: var(--vp-nav-height);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-height: calc(100vh - var(--vp-nav-height));
+    background-color: var(--vp-c-bg);
+    z-index: var(--vp-z-index-nav);
+    overflow-y: auto;
+  }
+
+  /* Improve mobile menu link visibility and touch targets */
   .VPNavScreenMenuLink,
   .VPNavScreen nav a {
     padding: 16px 24px;
