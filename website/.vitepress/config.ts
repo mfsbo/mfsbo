@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import { siteMetadata } from './theme/metadata'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
@@ -45,7 +46,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     footer: {
       message: 'Random thoughts on Tech',
-      copyright: 'Copyright © 2024 mfsbo'
+      copyright: 'Copyright © ' + siteMetadata.app_info_name + ' v' + siteMetadata.app_info_version+" (" + siteMetadata.app_info_commitShortHash + ") " + siteMetadata.app_info_released_on.toUTCString()
     },
 
     // Improve mobile menu accessibility

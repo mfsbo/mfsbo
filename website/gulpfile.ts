@@ -17,9 +17,10 @@
 // Import all tasks from gulp/tasks directory
 import { hello } from './gulp/tasks/hello.js';
 import { testAlias } from './gulp/tasks/testAlias.js';
+import { generateMetadata } from './gulp/tasks/generateMetadata.js';
 
 // Export tasks so they're available to Gulp CLI
-export { hello, testAlias };
+export { hello, testAlias, generateMetadata };
 
 // Set default task
 export default hello;

@@ -1,0 +1,8 @@
+import { Metadata } from '@/types/metadata'
+
+export const siteMetadata: Metadata = {
+  app_info_name: '{{app_info_name}}',
+  app_info_released_on: new Date('{{app_info_released_on}}'),
+  app_info_commitShortHash: '{{app_info_commitShortHash}}',
+  app_info_version: '{{app_info_version}}',
+};
