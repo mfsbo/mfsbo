@@ -1,9 +1,21 @@
 import { defineConfig } from 'vitepress'
+import path from 'path'
+import { fileURLToPath } from 'url'
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
   title: 'mfsbo',
   description: 'Random thoughts on Tech',
   base: '/mfsbo/',
+  
+  vite: {
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, '..')
+      }
+    }
+  },
   
   head: [
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/mfsbo/favicon.ico' }],
@@ -21,14 +33,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/', ariaLabel: 'Go to home page' },
-      { text: 'Posts', link: '/posts/', ariaLabel: 'View all blog posts' },
-      { text: 'About', link: '/about', ariaLabel: 'Learn more about mfsbo' },
-      { text: 'CV', link: '/cv', ariaLabel: 'View curriculum vitae' }
+      { text: 'Home', link: '/' },
+      { text: 'Posts', link: '/posts/' },
+      { text: 'About', link: '/about' },
+      { text: 'CV', link: '/cv' }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/mfsbo', ariaLabel: 'Visit mfsbo on GitHub' }
+      { icon: 'github', link: 'https://github.com/mfsbo' }
     ],
 
     footer: {

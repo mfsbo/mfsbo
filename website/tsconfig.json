@@ -11,10 +11,20 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
-    "types": ["vitepress/client"]
+    "types": ["vitepress/client"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
   "include": [
     "website/**/*.ts",
-    "website/**/*.d.ts"
+    "website/**/*.d.ts",
+    ".vitepress/**/*.ts",
+    ".vitepress/**/*.vue"
+  ],
+  "exclude": [
+    "node_modules",
+    "gulpfile.ts"
   ]
 }

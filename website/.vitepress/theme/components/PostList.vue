@@ -20,7 +20,8 @@
 </template>
 
 <script setup lang="ts">
-import { data as posts, Post } from '../posts.data';
+import { data as posts } from '../posts.data';
+import type { Post } from '@/types/post';
 import { useData, withBase } from 'vitepress';
 
 // Site base (already includes trailing slash in your config)

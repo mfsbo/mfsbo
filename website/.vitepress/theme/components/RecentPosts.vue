@@ -11,9 +11,10 @@
 </template>
 
 <script setup lang="ts">
-import { data as posts, Post } from '../posts.data';
+import { data as posts } from '../posts.data';
+import type { Post } from '@/types/post';
 import { useData, withBase } from 'vitepress';
-import { computed } from 'vue';
+import { computed, ComputedRef } from 'vue';
 
 // Site base (already includes trailing slash in your config)
 const { site } = useData();
@@ -22,7 +23,7 @@ const base = site.value.base || '/';
 const props = defineProps<{ count?: number }>();
 const count = props.count ?? 5;
 const withBasePath = (url: string) => withBase ? withBase(url) : base + url.replace(/^\//, '');
-const recentPosts = computed(() => posts.slice(0, count));
+const recentPosts: ComputedRef<Post[]> = computed(() => posts.slice(0, count));
 </script>
 
 <style scoped>

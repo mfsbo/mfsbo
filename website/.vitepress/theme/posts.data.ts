@@ -1,15 +1,5 @@
 import { createContentLoader } from 'vitepress'
-
-export interface Post {
-  url: string;
-  title: string;
-  date: Date;              
-  description: string;
-  category: string;
-  tags: string[];
-  year: number;            
-  displayDate: string;     
-}
+import type { Post } from '@/types/post'
 
 declare const data: Post[];
 export { data };
