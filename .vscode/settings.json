@@ -1,3 +1,10 @@
 {
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "files.associations": {
+    "gulpfile.ts": "typescript"
+  },
+  // Configure TypeScript language server to use the correct config per file
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true
 }
