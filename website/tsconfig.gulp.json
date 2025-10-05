@@ -27,7 +27,8 @@
     "noEmit": true
   },
   "include": [
-    "gulpfile.ts"
+    "gulpfile.ts",
+    "gulp/**/*.ts"
   ],
   "exclude": [
     "node_modules",

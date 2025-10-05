@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "gulp": "node --import tsx/esm ./node_modules/gulp/bin/gulp.js",
+    "gulp:tasks": "node --import tsx/esm ./node_modules/gulp/bin/gulp.js --tasks"
   },
   "keywords": [
     "blog",
@@ -19,6 +21,7 @@
   "devDependencies": {
     "@types/gulp": "^4.0.17",
     "@types/node": "^24.6.2",
+    "cross-env": "^10.1.0",
     "gulp": "^5.0.1",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
@@ -32,10 +35,14 @@
     "npm": "11.5.2"
   },
   "ts-node": {
+    "esm": true,
     "transpileOnly": true,
-    "require": ["tsconfig-paths/register"],
+    "require": [
+      "tsconfig-paths/register"
+    ],
     "compilerOptions": {
-      "module": "CommonJS"
+      "module": "ESNext",
+      "moduleResolution": "NodeNext"
     }
   },
   "dependencies": {

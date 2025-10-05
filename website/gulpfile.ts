@@ -1,33 +1,25 @@
 // @ts-check
 // TypeScript config: tsconfig.gulp.json
-import gulp from 'gulp';
-import type { TaskFunction } from 'gulp';
-import type { Post } from '@/types/post';
+/**
+ * Main Gulpfile - Entry point for all Gulp tasks
+ * 
+ * This file imports and exports all tasks from the gulp/tasks/ directory.
+ * Following Gulp best practices with modular task organization.
+ * 
+ * Directory structure:
+ *   gulpfile.ts          - Main entry point (this file)
+ *   gulp/
+ *     tasks/
+ *       hello.ts          - Hello world task
+ *       testAlias.ts      - Demonstrates @/ alias usage
+ */
 
-// Hello World task (properly typed)
-export const hello: TaskFunction = (cb) => {
-  console.log('Hello World from Gulp with TypeScript!');
-  cb();
-};
+// Import all tasks from gulp/tasks directory
+import { hello } from './gulp/tasks/hello.js';
+import { testAlias } from './gulp/tasks/testAlias.js';
 
-// Example task demonstrating @/ alias usage
-export const testAlias: TaskFunction = (cb) => {
-  // Demonstrate that we can use the Post type from @/types/post
-  const examplePost: Post = {
-    url: '/example',
-    title: 'Example Post',
-    date: new Date(),
-    description: 'Testing @/ alias in Gulp',
-    category: 'test',
-    tags: ['gulp', 'typescript'],
-    year: 2025,
-    displayDate: 'Oct 05'
-  };
-  
-  console.log('✅ @/ alias works in Gulp!');
-  console.log('Example post:', examplePost.title);
-  cb();
-};
+// Export tasks so they're available to Gulp CLI
+export { hello, testAlias };
 
-// Default task
+// Set default task
 export default hello;
