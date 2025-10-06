@@ -6,5 +6,6 @@ export interface Post {
   category: string;
   tags: string[];
   year: number;
+  month: number;
   displayDate: string;
 }

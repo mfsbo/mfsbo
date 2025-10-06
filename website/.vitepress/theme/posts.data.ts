@@ -20,6 +20,7 @@ export default createContentLoader(["./posts/**/2*.md"], {
           category: frontmatter.category ?? '',
           tags: frontmatter.tags || [],
           year: dateObj.getFullYear(),
+          month: dateObj.getMonth(),
           displayDate: displayDateFormatter.format(dateObj)
         };
       })
