@@ -64,9 +64,10 @@ meta:
 
 | Role | Organisation | Span | Focus |
 | ---- | ------------ | ---- | ----- |
-| Lead Software Developer | Booking Online Ltd | 2019–Present | API-first migration, modular UI, CI/CD |
+| Lead Software Developer | Booking Online Ltd | 2019–Present | API-first migration, Mobile Apps, modular UI, CI/CD |
 | IT Operations Manager | Countrywide Plc | 2015–2019 | Team leadership, stack modernisation, Azure shift |
-| Director | Subhani Brothers Ltd | 2009–Present | Team Leadership, bespoke systems, Cloud Transformations |
+| Lead Software Engineer | Riskvantage | 2011–2015 | Risk Management, Compliance, Reporting |
+| Director | Subhani Brothers Ltd | 2009–Present | Team Leadership, bespoke systems, Cloud Transformations, Driver Apps, Game Development |
 
 ## Skills Grid
 
