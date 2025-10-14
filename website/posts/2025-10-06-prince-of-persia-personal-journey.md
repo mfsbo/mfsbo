@@ -24,7 +24,7 @@ type: default
 
 <!-- markdownlint-disable MD033 -->
 <picture>
-  <source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2Cw_1400%2Cdpr_auto/github/mfsbo/prince_of_persia_mnno46.png">
+  <source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2Cw_672%2Cdpr_auto/github/mfsbo/prince_of_persia_mnno46.png">
   <img src="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2Cw_900%2Cdpr_auto/github/mfsbo/prince_of_persia_mnno46.png" alt="Composite artwork showing multiple incarnations of the Prince of Persia across eras" loading="lazy" decoding="async">
 </picture>
 
@@ -58,7 +58,7 @@ Enter *grace*. **Prince of Persia: The Sands of Time (2003)** is where I truly f
 It aged better than many contemporaries because it married mechanics to *fantasy*: the dagger isn’t a gimmick; it *defines* pacing.
 
 <picture>
-  <source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2cw_1400%2Cdpr_auto/github/mfsbo/POP_2003_Screenshot_um4bc8.avif">
+  <source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2cw_672%2Cdpr_auto/github/mfsbo/POP_2003_Screenshot_um4bc8.avif">
   <img src="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2cw_900%2Cdpr_auto/github/mfsbo/POP_2003_Screenshot_um4bc8.avif" alt="Screenshot from Prince of Persia: The Sands of Time showing early palace traversal" loading="lazy" decoding="async">
 </picture>
 
@@ -79,7 +79,7 @@ Some players felt it lacked bite; I appreciated the meditative traversal loops. 
 **The Forgotten Sands** arrived as a sort of bridge, slotting between earlier narrative beats. I played the Xbox version months inside its release window and enjoyed the elemental powers layering onto traversal (freezing water mid‑flow = chef’s kiss). It didn’t eclipse 2003, but it reaffirmed the *core grammar*: environment + timing + forgiving-but-not-trivial retries.
 
 <picture>
-  <source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2Cw_1400%2Cdpr_auto/github/mfsbo/POP_2010_ForgottenSands_Screenshot_zgkkkf.avif">
+  <source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2Cw_672%2Cdpr_auto/github/mfsbo/POP_2010_ForgottenSands_Screenshot_zgkkkf.avif">
   <img src="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2Cw_900%2Cdpr_auto/github/mfsbo/POP_2010_ForgottenSands_Screenshot_zgkkkf.avif" alt="Prince of Persia: The Forgotten Sands screenshot freezing water to traverse" loading="lazy" decoding="async">
 </picture>
 
@@ -90,7 +90,7 @@ Between major beats I dabbled in **Classic** remakes and mobile riffs — fun pa
 Then came **The Dagger of Time (2020)** — a VR escape-room style experience. It translated the series’ signature temporal play into collaborative puzzle solving. I didn’t *rewind* out of a missed jump; I negotiated space and time with teammates. It felt like a respectful spin-off — the DNA expressed through a different genre lens.
 
 <picture>
-  <source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2Cw_1400%2Cdpr_auto/github/mfsbo/POP_2020_DaggerOfTime_screenshot_norcoy.webp">
+  <source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2Cw_672%2Cdpr_auto/github/mfsbo/POP_2020_DaggerOfTime_screenshot_norcoy.webp">
   <img src="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2Cw_900%2Cdpr_auto/github/mfsbo/POP_2020_DaggerOfTime_screenshot_norcoy.webp" alt="Prince of Persia: The Dagger of Time VR experience screenshot with mystical temporal puzzle" loading="lazy" decoding="async">
 </picture>
 
@@ -116,7 +116,7 @@ Want instant serotonin? A **35th Anniversary homage wallpaper**. Here’s a down
 
 <a href="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2Cw_3840%2Cdpr_auto/github/mfsbo/POP35-Homage_Wallpaper_3840x2160_ulcnrq.jpg" target="_blank" rel="noopener">
   <picture>
-    <source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2Cw_1000%2Cdpr_auto/github/mfsbo/POP35-Homage_Wallpaper_3840x2160_ulcnrq.jpg">
+    <source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2Cw_672%2Cdpr_auto/github/mfsbo/POP35-Homage_Wallpaper_3840x2160_ulcnrq.jpg">
     <img src="https://res.cloudinary.com/dfph3xsla/image/upload/f_auto%2Cq_auto%2Cw_700%2Cdpr_auto/github/mfsbo/POP35-Homage_Wallpaper_3840x2160_ulcnrq.jpg" alt="Prince of Persia 35th anniversary homage wallpaper collage" loading="lazy" decoding="async">
   </picture>
 </a>
