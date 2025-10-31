@@ -5,6 +5,7 @@
 - ✉️ Reach me on farrukh at bookingonline dot co dot uk
 
 ### Streak
+[![wakatime](https://wakatime.com/badge/user/4abe7a18-f178-4b60-ae88-136f0272408c.svg)](https://wakatime.com/@4abe7a18-f178-4b60-ae88-136f0272408c)
 #### Current Work
 ![Work Streak](https://streak-stats.demolab.com/?user=mfsbo)
 #### Previous Jobs
