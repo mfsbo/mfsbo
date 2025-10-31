@@ -15,6 +15,12 @@
 
 [![Farrukh's GitHub stats](https://github-readme-stats.vercel.app/api?username=mfsbo&hide=stars&count_private=true)](https://github.com/mfsbo/)
 
+### My contributions
+![Metrics](./metrics.svg)
+
+### Full-year isometric calendar
+![Isometric Calendar](./isocalendar.svg)
+
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-1%2C088%20hrs%2040%20mins-blue)
 
