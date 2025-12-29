@@ -26,4 +26,6 @@ import RecentPosts from './.vitepress/theme/components/RecentPosts.vue';
 </script>
 <RecentPosts :count="5" />
 
+[2025 Year-End Summary →](/posts/2025-12-29-development-in-year-2025)
+
 [View all posts →](/posts/)
