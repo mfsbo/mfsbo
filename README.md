@@ -11,7 +11,7 @@
 ![Isometric Calendar](./isocalendar.svg)
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-1%2C115%20hrs%2059%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-1%2C116%20hrs%2035%20mins-blue?style=flat)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-1-blue?style=flat)
 
@@ -54,15 +54,16 @@ Sunday                   5579 commits        ░░░░░░░░░░░�
 🕑︎ Time Zone: Europe/London
 
 💬 Programming Languages: 
-Markdown                 2 hrs 10 mins       ███████████████░░░░░░░░░░   61.34 % 
-TypeScript               1 hr 8 mins         ████████░░░░░░░░░░░░░░░░░   32.22 % 
-JSON                     13 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.44 % 
+Markdown                 2 hrs 10 mins       █████████████░░░░░░░░░░░░   52.45 % 
+TypeScript               1 hr 12 mins        ███████░░░░░░░░░░░░░░░░░░   29.34 % 
+JSON                     31 mins             ███░░░░░░░░░░░░░░░░░░░░░░   12.83 % 
+Vue.js                   13 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.38 % 
 
 🔥 Editors: 
-VS Code                  3 hrs 32 mins       █████████████████████████   100.00 % 
+VS Code                  4 hrs 8 mins        █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Windows                  3 hrs 32 mins       █████████████████████████   100.00 % 
+Windows                  4 hrs 8 mins        █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in TypeScript** 
@@ -78,7 +79,7 @@ Shell                    2 repos             ░░░░░░░░░░░�
 
 
 
- Last Updated on 25/01/2026 02:37:47 UTC
+ Last Updated on 26/01/2026 02:45:25 UTC
 <!--END_SECTION:waka-->
 <!--
 **mfsbo/mfsbo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
