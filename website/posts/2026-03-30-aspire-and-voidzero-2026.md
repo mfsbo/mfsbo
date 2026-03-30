@@ -1,20 +1,20 @@
 ---
-title: ".NET Aspire and VoidZero in 2026 — Two Ecosystems Solving the Same Problem"
-description: "A deep dive into .NET Aspire and VoidZero's toolchain — how two different communities converged on the same developer-experience goal: unified, type-safe, full-stack workflows with great local dev loops and clear deployment paths."
+title: "Aspire 13 and VoidZero / Vite+ in 2026 — Two Ecosystems Closing the Same Gap"
+description: "March 2026 snapshot of Aspire 13 and VoidZero's Vite+ toolchain: current versions, key people, stack options, and how both ecosystems are reducing the distance between local development and production deployment."
 date: 2026-03-30T00:00:00.000Z
-preview: "Aspire brings orchestration and observability to .NET stacks. VoidZero brings a unified, Rust-powered toolchain to the JS/TS world. Both communities are solving the same pain: too much configuration glue between your code and production. This post compares approaches, highlights the people behind them, and surfaces real-world stacks you can start with today."
+preview: "Aspire 13 is now independently versioned, polyglot, and built on .NET 10 with .NET 11 already in preview. VoidZero has moved from separate tools to a public Vite+ and Void story on top of Vite, Rolldown, Oxc, Vitest, and Cloudflare. This post compares the two in their current 2026 form."
 draft: false
 tags:
   - aspire
-  - voidzero
   - dotnet
+  - dotnet11
+  - voidzero
+  - vite-plus
   - vite
-  - vuejs
-  - nuxt
+  - nodejs
   - cloudflare
-  - fullstack
+  - vuejs
   - developer-experience
-  - typescript
 categories:
   - engineering-practices
   - frontend
@@ -24,256 +24,553 @@ type: default
 ---
 
 <!-- markdownlint-disable MD025 MD033 -->
-# .NET Aspire and VoidZero in 2026 — Two Ecosystems Solving the Same Problem
+# Aspire 13 and VoidZero / Vite+ in 2026 — Two Ecosystems Closing the Same Gap
 
-Two very different technology communities — the .NET world and the JavaScript/TypeScript world — have independently arrived at roughly the same realization in 2025–2026:
+This post needed a 2026 refresh.
 
-> **The gap between "running locally" and "running in production" is too expensive, and the toolchain should close it by default.**
+In March 2026, both ecosystems have moved on from the 2025 framing:
 
-.NET Aspire does this through orchestration, service discovery, and built-in observability for .NET applications. VoidZero does this through a unified, Rust-powered build toolchain (Vite, Rolldown, Oxc, Vitest) and a runtime model that spans the client, edge, and server — with Cloudflare Workers as a first-class deployment target.
+- **Aspire is now at 13.1.x**, versioned independently, officially branded as **Aspire**, and documented on [aspire.dev](https://aspire.dev/). Microsoft's support policy currently lists **Aspire 13.1.2** as the supported release.
+- **.NET 10 is the current LTS base** for Aspire 13, while **.NET 11 is already in preview** with Preview 2 available in March 2026.
+- **VoidZero is no longer just a promise of better tooling**. It has publicly launched **Vite+** and is building a clearer product story around a unified toolchain and **Void**, a deployment platform built around Cloudflare.
+- On the JavaScript side, **Node 24 is the Active LTS line** and **Node 25 is the Current release**, which matters because the Vite / Vite+ / Workers ecosystem moves quickly and benefits from staying close to the modern Node baseline.
 
-This post covers both, why they matter in 2026, who is driving them, and practical stacks you can start with today.
+That makes 2026 a much better moment to compare these stacks, because both are now more explicit about the same goal:
 
----
-
-## What is .NET Aspire?
-
-[.NET Aspire](https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview) is Microsoft's opinionated cloud-native application stack for .NET. It is distributed as a NuGet workload and adds:
-
-- **AppHost** — a project that acts as the local orchestrator. You declare your services, databases, message brokers, and caches in C# code and Aspire starts them together, wiring up connection strings and environment variables automatically.
-- **Service Defaults** — a shared project that stamps health checks, OpenTelemetry tracing/metrics/logging, and resilience patterns (via Polly) onto every service by convention.
-- **Dashboard** — a local observability UI that shows distributed traces, structured logs, and resource state across all running services without needing a full APM stack locally.
-- **Integrations** — first-party packages for PostgreSQL, Redis, RabbitMQ, Azure Service Bus, SQL Server, MongoDB and more. Each integration wires up the connection inside the AppHost and publishes the right configuration to consuming services.
-
-As of early 2026, Aspire is tracking toward its **9.x** release line (having shipped 8.x in late 2024 and iterating through the .NET 9/10 era). The version sometimes cited as "13" in community discussions refers to the .NET SDK/runtime major version context, not the Aspire package version — the Aspire workload version closely follows the .NET SDK it targets.
-
-### What Aspire gives you on the backend
-
-- Service orchestration without Docker Compose YAML (or alongside it — Aspire can publish a `docker-compose` or Azure resource manifest).
-- Automatic service discovery: `http://myservice` resolves correctly whether you are running locally or in Azure Container Apps.
-- OpenTelemetry out of the box. Every service gets traces correlated by `TraceId` that you can view in the dashboard or send to any OTLP-compatible backend (Grafana, Jaeger, Azure Monitor).
-- Resilience policies (retries, circuit breakers) via the `Microsoft.Extensions.Resilience` integration, which wraps Polly 8.
-
-### What Aspire gives you on the frontend
-
-Aspire is primarily a backend-orchestration story, but it handles frontend integration in a few ways:
-
-- **Node.js / npm workload support** — you can wire a Vite or Next.js frontend into the AppHost so it starts alongside the API, with the dev proxy pointing at the right port automatically.
-- **Static file hosting** — Aspire-managed services can serve SPA builds from Azure Static Web Apps or Azure Blob Storage with a CDN in front, with the resource connection published to consuming services.
-- **Angular, React, Vue starter templates** — the `dotnet new aspire-starter` templates include a frontend project pre-wired to the Aspire host.
+> **Reduce the distance between local development, team workflows, and production deployment without forcing developers to assemble everything themselves.**
 
 ---
 
-## The People Behind Aspire
+## 2026 Snapshot
 
-The Aspire team at Microsoft is small and highly visible. If you follow their work you will understand the design decisions:
-
-| Person | Role / Why They Matter |
-|---|---|
-| **David Fowler** | Principal Architect, .NET. Designed much of ASP.NET Core's internals and the service discovery primitives that underpin Aspire. Active on GitHub and Twitter/X with in-depth technical commentary. |
-| **Damian Edwards** | Partner Software Engineer, .NET. Builds the Aspire developer loop — the CLI, hot reload, tooling integration. His live-coding sessions are where rough edges get surfaced and fixed in public. |
-| **Mady Montaquila** | Program Manager, .NET. The team's PM voice — communicates the roadmap publicly, runs Aspire Friday streams, and translates developer feedback into backlog items. |
-| **Scott Hanselman** | Partner Program Manager and public face of .NET at Microsoft. Scott's role in the *Aspire Fridays* series (where he acted as Product Owner on his own podcast app) showed how real-world .NET apps get aspirified incrementally — SDK mismatches, legacy naming debt, expiring tokens and all. |
-
-Their public work is a good learning path: watch the [Aspire Fridays playlist](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oWNHfHPF9JKWEtqFjjUJ8Yq), follow the [.NET Blog](https://devblogs.microsoft.com/dotnet/), and read the [Aspire samples repo](https://github.com/dotnet/aspire-samples).
-
----
-
-## What is VoidZero?
-
-[VoidZero](https://voidzero.dev) is the company Evan You (creator of Vue.js and Vite) founded in 2024 to build a unified, open-source JavaScript/TypeScript toolchain. The goal: replace the fragmented collection of tools (webpack, Babel, Jest, ESLint's parser, Rollup, esbuild) with a single, coherent, Rust-powered stack that shares the same resolver, parser, and module graph.
-
-The core projects under the VoidZero umbrella:
-
-| Project | What It Does |
-|---|---|
-| **Vite** | Dev server and build tool (now on v6+). Production bundles via Rolldown. |
-| **Rolldown** | Rust-based bundler that is API-compatible with Rollup but orders of magnitude faster. Replaces esbuild for production builds in Vite 6+. |
-| **Oxc** | Rust-based parser, linter (replacing ESLint), minifier, formatter, and resolver. The shared foundation every other tool is built on. |
-| **Vitest** | Unit and integration testing built on top of Vite — same config, same transforms, native ESM, browser mode. |
-| **VoidZero Runtime / `void0`** | The emerging server runtime story — designed for edge and serverless deployment with first-class Cloudflare Workers support. |
-
-### The Syntax Podcast connection
-
-The [Syntax.fm](https://syntax.fm) podcast — hosted by **Wes Bos** and **Scott Tolinski (CJ)** — has covered VoidZero and Vite+ extensively. Their episodes on Vite 6 and Rolldown walked through the performance numbers (cold start, HMR, bundle size) in a way that is accessible whether you are a Vue, React, or Svelte developer. Worth searching their feed for `voidzero`, `vite`, and `rolldown`.
-
-### Type safety and deployment model
-
-VoidZero's framework story emphasises end-to-end type safety:
-
-- **Vue + Nuxt** — Nuxt 4's type-safe routing, data fetching, and server components give Vue developers a full-stack model similar to Next.js for React or SvelteKit for Svelte.
-- **Cloudflare Workers as the deployment target** — the edge layer runs your server-side logic close to users, stores secrets (API keys, tokens, credentials) in Workers' `env`, and exposes them only server-side. Your client bundle never sees them.
-- **The "silver split"** — a deployment model where the app is split between client bundle (CDN), edge worker (Cloudflare), and optionally a traditional server. VoidZero tools make this split explicit and type-safe rather than an afterthought.
-
----
-
-## The People Behind VoidZero
-
-| Person | Role / Why They Matter |
-|---|---|
-| **Evan You** | Creator of Vue.js, Vite, and founder of VoidZero. The technical architect of the Rust toolchain direction. His ViteConf talks are the canonical source for the roadmap. |
-| **Wes Bos** | Co-host of Syntax.fm. Brings VoidZero tools to a wide audience including developers who primarily work with React or non-Vue stacks. His practical breakdowns of Vite, Vitest, and Rolldown are a good entry point. |
-| **Scott Tolinski (CJ)** | Co-host of Syntax.fm. Previously built SvelteKit apps (Level Up Tutorials), now active on the Astro side of the ecosystem. His perspective bridges the framework gap between Vue, Svelte, and meta-frameworks. |
-| **Vue.js core team** | The Vue 3 Composition API, `<script setup>`, and Pinia ecosystem — which underpin Nuxt's full-stack story — come from contributors like Anthony Fu, patak, sxzz, and others who are deeply involved in both Vue and the VoidZero toolchain. |
-| **Nuxt team** | Sébastien Chopin (Atinux) and the UnJS / Nuxt core team drive the full-stack Nuxt story including server-side rendering, edge deployment on Cloudflare, and Nitro (the server engine used by Nuxt). |
-
----
-
-## Comparing the Two Ecosystems
-
-Both ecosystems are solving the same class of problems:
-
-| Problem | .NET Aspire Approach | VoidZero Approach |
+| Area | Aspire | VoidZero |
 |---|---|---|
-| **Local dev environment** | AppHost orchestrates all services together; dashboard shows traces | Vite dev server + Vitest watch mode; unified config |
-| **Secret management** | AppHost publishes secrets/connection strings as env vars; Azure Key Vault integration in production | Cloudflare Workers `env` bindings; `.dev.vars` for local secrets; never exposed to client |
-| **Type safety end-to-end** | C# strong typing + minimal API route handlers + TypeScript client generation (NSwag/Kiota) | TypeScript across Vue/Nuxt, tRPC or typed fetch, Oxc for fast type checking |
-| **Deployment model** | Azure Container Apps, App Service, or AKS — Aspire can publish manifests for all three | Cloudflare Workers (edge), Cloudflare Pages (static), or traditional Node.js server via Nitro |
-| **Observability** | Built-in OTLP / OpenTelemetry dashboard; hooks into Azure Monitor | Planned Vite DevTools + Vitest UI; Cloudflare Workers analytics for production |
-| **Auth** | ASP.NET Core Identity, Azure AD / Entra ID, MSAL | Cloudflare Access, Auth.js (Nuxt Auth), Lucia Auth |
-| **Toolchain fragmentation** | NuGet workload; single SDK, single CLI (`dotnet`) | Unified Oxc-based toolchain (replaces Babel, ESLint parser, Rollup, esbuild) |
-
-The key philosophical difference: Aspire delegates orchestration to a host process and leans on Azure for production infrastructure. VoidZero delegates to the Cloudflare edge and aims to make the gap between local and production vanishingly small by running the same runtime in both places.
+| Current 2026 position | **Aspire 13.1.x** supported | **Vite+** publicly launched by VoidZero |
+| Platform base | **.NET 10 LTS** today, **.NET 11 Preview 2** already available | **Node 24 Active LTS** for production, **Node 25 Current** for latest features |
+| Main strength | Cloud-native orchestration, service discovery, observability, polyglot app composition | Unified JS/TS toolchain, faster Rust core, integrated developer workflow, Cloudflare-aligned deployment |
+| Core story | AppHost + service defaults + dashboard + integrations + pipelines | Vite + Rolldown + Oxc + Vitest + unified CLI + Void platform |
+| Deployment direction | Azure-first, container-first, polyglot distributed apps | Edge/serverless-first, Cloudflare-based, client/server split with platform services |
 
 ---
 
-## Practical Stack Options
+## Aspire in March 2026: What Changed
 
-### Aspire stacks
+The most important update is simple: **Aspire is no longer just “.NET Aspire 9.x.”**
 
-**Option 1 — Minimal API + PostgreSQL + Redis (starter)**
+According to Microsoft's official support policy, Aspire now has its **own release cadence and support lifecycle**. In practice, that means:
 
+- **Aspire 13.1** is the supported train in March 2026.
+- Older lines such as **13.0** and even the **9.x** series are already out of support.
+- Microsoft now supports **only the latest Aspire release level**, so the upgrade cadence is intentionally fast.
+
+That change matters because it signals that Aspire is becoming a product with its own identity rather than a sidecar to a single .NET release.
+
+### It is now broader than “just .NET”
+
+Aspire 13 is also important because Microsoft widened the scope of the platform:
+
+- **JavaScript apps are now first-class** in the orchestration story.
+- **Python apps are also first-class**.
+- The docs and branding have shifted to **Aspire** rather than tying everything to the .NET name.
+
+That makes the comparison to VoidZero much more interesting than it was a year ago. Aspire is still clearly strongest for .NET teams, but it is now also trying to solve the **polyglot app-platform problem** — the same broader workflow problem that VoidZero is attacking from the JavaScript side.
+
+### What Aspire 13 offers right now
+
+#### 1. App orchestration in code
+
+The core Aspire value is still the same, but the platform is sharper now:
+
+- **AppHost** remains the central composition point.
+- Services, databases, caches, queues, and external dependencies are declared in code.
+- Resources get **connection information, environment values, and service discovery** automatically.
+- Teams spend less time stitching together YAML, local scripts, and ad-hoc environment setup.
+
+#### 2. Better polyglot support
+
+This is one of the biggest 2026 reasons to take Aspire seriously.
+
+Aspire 13 adds or improves:
+
+- **JavaScript app orchestration** with package-manager detection for `npm`, `pnpm`, and `yarn`
+- better support for **Vite-style frontend projects** inside the Aspire host
+- **Python application support**, including local workflows and container publishing
+- improved handling of connection details across different languages and frameworks
+
+That means a real-world stack can now look like this:
+
+```text
+Aspire AppHost
+├── ASP.NET Core API
+├── Vite / React or Vue frontend
+├── PostgreSQL
+├── Redis
+└── Python worker or AI service
 ```
+
+A year ago that comparison felt theoretical. In 2026 it is much more practical.
+
+#### 3. Better publish / deploy pipelines
+
+One of the biggest Aspire 13 additions is the new **pipeline-oriented workflow** around `aspire do`.
+
+That is important because Aspire is not only trying to start your app locally anymore. It is trying to own more of the path from:
+
+- build,
+- validate,
+- publish,
+- deploy,
+- and post-deploy verification.
+
+That is very close to what frontend developers have been asking for from their tooling for years: **less glue, more default workflow**.
+
+#### 4. Dashboard + MCP story
+
+Aspire's local dashboard was already useful in 2025. In 2026, the more interesting step is that it is also part of the **AI-assisted diagnostics** story through an MCP server.
+
+This is exactly the kind of thing that makes Aspire feel current instead of “just another orchestration layer”:
+
+- live resources,
+- logs,
+- traces,
+- operational metadata,
+- and assistant-friendly access to that information.
+
+That puts Aspire directly in the 2026 conversation about how development, operations, and AI tooling intersect.
+
+---
+
+## .NET 10 vs .NET 11 in this discussion
+
+If you are looking at Aspire in March 2026, the practical version guidance is:
+
+- **Use .NET 10** if you want the stable LTS foundation.
+- **Watch .NET 11 Preview 2** if you want to understand where the platform is going next.
+
+The reason .NET 11 matters to this post is not that Aspire 13 depends on it today. It matters because it shows what Microsoft is investing in for the next wave of app development:
+
+- more runtime performance work,
+- improved OpenTelemetry and ASP.NET Core capabilities,
+- better cloud/container workflows,
+- and continued work on reducing the friction around async, APIs, and distributed systems.
+
+In other words, Aspire 13 is the current platform story, while .NET 11 is a signal about where the underlying runtime and SDK are heading.
+
+---
+
+## Why Aspire matters for backend and frontend teams
+
+Aspire still lands most obviously with backend developers, but I think that undersells it in 2026.
+
+### Backend value
+
+For backend teams, Aspire gives you:
+
+- opinionated service composition
+- built-in service discovery
+- local distributed observability
+- healthier defaults for resilience and telemetry
+- clearer deployment workflows for container-first apps
+
+### Frontend value
+
+For frontend teams, Aspire matters when your frontend is part of a bigger product system:
+
+- your Vite app can live in the same local topology as your APIs, cache, queue, identity provider, and worker services
+- local startup becomes **one host, one graph, one dashboard** rather than several README tabs
+- you can model **frontend + backend + infra dependencies** together rather than pretending the frontend is separate from the system it depends on
+
+That is one reason people like **David Fowler**, **Damian Edwards**, **Mady Montaquila**, and **Scott Hanselman** keep talking about it publicly. They are not only talking about .NET syntax or one framework. They are talking about reducing the systems-integration tax on modern teams.
+
+---
+
+## The People Driving Aspire
+
+| Person | Contribution / perspective |
+|---|---|
+| **David Fowler** | The architectural depth behind ASP.NET Core, hosting, service discovery, and a lot of the “good default” design thinking that Aspire builds on. |
+| **Damian Edwards** | A key voice in the developer loop, tooling quality, and practical “does this work on a real machine?” side of the platform. |
+| **Mady Montaquila** | A visible product and communication bridge for Aspire: roadmap, demos, feedback loops, and helping developers understand where the platform is going. |
+| **Scott Hanselman** | Helps connect Aspire to real-world product teams and real-world apps rather than just idealized demos. His streams and discussions make the Azure/.NET ecosystem side of the story much easier to follow. |
+
+These are exactly the kinds of people who matter when a platform is trying to become a workflow, not just a library.
+
+---
+
+## VoidZero in March 2026: It Is About Vite+ Now
+
+The old way of talking about VoidZero was: “Evan You started a company that might eventually unify JavaScript tooling.”
+
+That is not the current situation anymore.
+
+In 2026, the clearer framing is:
+
+- **VoidZero has publicly launched Vite+** as the product layer.
+- The open-source foundation remains **Vite, Rolldown, Oxc, and Vitest**.
+- The platform/deployment direction is now much more explicit with **Void**, which is aligned with **Cloudflare** infrastructure.
+
+So instead of talking about a loose ecosystem, it makes more sense to talk about a **toolchain strategy**.
+
+### What Vite+ is trying to do
+
+Vite+ is essentially an answer to the long-standing JavaScript problem that too many important workflows are spread across unrelated tools.
+
+Instead of a team having to mentally stitch together:
+
+- dev server
+- bundler
+- linter
+- formatter
+- test runner
+- monorepo task runner
+- library bundler
+- debug UI
+
+…the Vite+ pitch is that these should feel like **one system** rather than a bag of brands.
+
+### The building blocks
+
+#### Vite
+
+Still the center of gravity for modern frontend development, but now more tightly aligned with the rest of the stack.
+
+#### Rolldown
+
+Rolldown is the Rust bundler story. This matters because production builds have historically been where frontend teams hit the worst gap between “fast local” and “slow real.”
+
+#### Oxc
+
+Oxc is probably the most strategically important piece of the whole story:
+
+- parser
+- linter
+- formatter direction
+- minification / transform foundation
+- shared AST / shared infrastructure
+
+That matters because once the parser and toolchain core are unified, everything else gets simpler and faster.
+
+#### Vitest
+
+Vitest remains one of the most practical wins in the ecosystem because it uses the same configuration and same mental model as Vite. It is exactly the kind of integration people wanted from Jest-era workflows but rarely got.
+
+### The CLI direction
+
+The big shift with Vite+ is not only raw speed. It is **workflow consolidation**.
+
+The public Vite+ direction includes commands and capabilities around:
+
+- create / scaffold
+- dev
+- build
+- test
+- lint
+- fmt
+- lib
+- run
+- ui
+
+That makes the comparison to Aspire much stronger than it used to be. They are both trying to become the place where developers start their day.
+
+---
+
+## Void, Cloudflare, and the server/client split
+
+The other important 2026 update is that VoidZero's deployment story is more explicit now.
+
+The platform direction is not just “make builds faster.” It is:
+
+- **build with the unified toolchain**,
+- **deploy with Void**,
+- and use a **Cloudflare-native runtime and services layer** for the server side.
+
+That is a big deal because it lines up with how many teams actually want to build web products now:
+
+1. **Client bundle** on the CDN
+2. **Server or edge logic** close to the user
+3. **Secrets and auth kept server-side**
+4. **Platform services** like queues, storage, databases, and bindings handled by the deployment platform
+
+This is the same broad problem space the issue description was pointing at.
+
+Frameworks like **Next.js**, **Nuxt**, and now the broader Vite+/Void direction are all moving toward a world where:
+
+- the client is not trusted with secrets,
+- the server layer is not a separate afterthought,
+- and deployment is part of the framework/toolchain story.
+
+That is why Cloudflare matters so much in the VoidZero discussion. It is not just a hosting target. It is part of the product model.
+
+---
+
+## The People Driving VoidZero
+
+| Person | Contribution / perspective |
+|---|---|
+| **Evan You** | The central technical figure. Creator of Vue and Vite, and now the person most strongly associated with turning JavaScript tooling into a more coherent platform. |
+| **Wes Bos** | Important because he brings the story to a broad working-developer audience through Syntax and practical demos instead of only conference keynotes. |
+| **Scott Tolinski (CJ)** | Similar role to Wes, but also useful as a bridge across ecosystems and real app-building workflows. Syntax has helped a lot of developers actually understand what Vite+, VoidZero, and related tools are trying to fix. |
+| **Vue core team** | People around Vue, Vite, and adjacent tooling helped create the baseline of ergonomics that made this possible in the first place. |
+| **Nuxt / UnJS team** | They matter because Nuxt is where a lot of the “full-stack but still frontend-friendly” execution has happened in practice, especially around server routes, rendering, deployment targets, and Cloudflare support. |
+
+This mirrors the Aspire side more than people sometimes admit. In both cases, visible technical leaders plus strong public educators are moving an ecosystem from tools to workflow.
+
+---
+
+## Node in March 2026: Why It Matters Here
+
+For the JavaScript side, the current Node baseline is part of the story.
+
+As of March 2026:
+
+- **Node 24 (“Krypton”)** is the **Active LTS** line.
+- **Node 25** is the **Current** line.
+- **Node 22** is in **Maintenance LTS**.
+
+That matters because the fast-moving toolchain story is no longer just about what framework you pick. It is also about whether your runtime baseline is modern enough to benefit from the tooling work being shipped around ESM, bundling, testing, and platform APIs.
+
+If I were choosing a production baseline for a Vite+/Void stack in March 2026, I would default to **Node 24 LTS** unless I had a very specific reason to target something else.
+
+---
+
+## Comparing Aspire and VoidZero in 2026
+
+| Problem | Aspire 13 answer | VoidZero / Vite+ answer |
+|---|---|---|
+| **How do I start the whole system locally?** | AppHost composes the system graph and starts it with a dashboard | Unified CLI and framework-first tooling reduce the number of separate moving parts |
+| **How do I keep dev and prod closer together?** | Container-first, pipeline-first, Azure-aligned orchestration | Same core toolchain for dev/build/test plus Cloudflare-aligned deployment |
+| **How do I handle multiple services?** | First-class service composition with resources and integrations | Better app/toolchain composition; service composition depends more on framework + platform choices |
+| **How do I handle observability?** | Aspire dashboard, traces, logs, telemetry | Better integrated tooling and UI; production insights lean on the hosting platform |
+| **How do I handle secrets and auth?** | Env/config + Azure services + platform integrations | Workers/platform bindings keep secrets server-side and close to the runtime |
+| **What kind of team benefits most?** | .NET-heavy or polyglot backend/platform teams | JS/TS-heavy frontend/full-stack teams moving fast on edge/serverless platforms |
+
+The difference is mostly where they start:
+
+- Aspire starts from **distributed application composition**.
+- VoidZero starts from **toolchain unification**.
+
+But both are moving toward the same place: a platform-shaped developer experience.
+
+---
+
+## Practical Stack Options in 2026
+
+### Aspire stack options
+
+### 1. API + frontend + data cache starter
+
+```text
 AppHost
-├── YourApi          (ASP.NET Core Minimal API, .NET 9/10)
-├── PostgreSQL        (Aspire.Hosting.PostgreSQL)
-└── Redis            (Aspire.Hosting.StackExchangeRedis)
+├── Web API (.NET 10)
+├── Vite frontend
+├── PostgreSQL
+└── Redis
 ```
 
-- Template: [`dotnet new aspire-starter`](https://learn.microsoft.com/dotnet/aspire/fundamentals/setup-tooling?tabs=dotnet-cli)
-- GitHub sample: [dotnet/aspire-samples — AspireShop](https://github.com/dotnet/aspire-samples/tree/main/samples/AspireShop)
+Why this is a strong 2026 starting point:
 
-**Option 2 — Microservices with messaging**
+- you get a clean API-first backend
+- a modern frontend toolchain
+- realistic local infra
+- one orchestration entry point
 
-```
+Start with:
+
+- [Aspire getting started docs](https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview)
+- [dotnet/aspire-samples](https://github.com/dotnet/aspire-samples)
+
+### 2. eShop-style multi-service reference
+
+```text
 AppHost
-├── CatalogApi       (ASP.NET Core, PostgreSQL)
-├── OrderApi         (ASP.NET Core, PostgreSQL)
-├── RabbitMQ         (Aspire.Hosting.RabbitMQ)
-├── Redis            (distributed cache + output cache)
-└── WebApp           (Blazor / React / Vue — Vite wired via NodeApp resource)
+├── Catalog service
+├── Basket / ordering services
+├── frontend app
+├── messaging
+└── data stores
 ```
 
-- GitHub sample: [dotnet/eShop](https://github.com/dotnet/eShop) — the canonical Aspire microservices reference
-- Blog: [Announcing eShop with Aspire](https://devblogs.microsoft.com/dotnet/introducing-dotnet-aspire-simplifying-cloud-native-development-for-dotnet-9/)
+Start with:
 
-**Option 3 — Blazor + Aspire (full .NET frontend + backend)**
+- [dotnet/eShop](https://github.com/dotnet/eShop)
 
-```
+This remains one of the best “show me a real stack, not a toy” examples in the Microsoft ecosystem.
+
+### 3. Polyglot team setup
+
+```text
 AppHost
-├── BlazorApp        (Blazor Web App, auto render mode)
-├── ApiService       (ASP.NET Core Minimal API)
-└── PostgreSQL
+├── ASP.NET Core API
+├── JavaScript frontend
+├── Python worker / AI app
+├── PostgreSQL
+└── queue or broker
 ```
 
-- Template: [`dotnet new aspire-starter --use-blazor`](https://learn.microsoft.com/dotnet/aspire/get-started/build-your-first-aspire-app)
+This is the 2026 Aspire scenario that feels most different from earlier versions. If your team spans backend, frontend, and AI/service experimentation, Aspire 13 is much more relevant than Aspire 9 ever was.
 
 ---
 
-### VoidZero / Nuxt stacks
+### VoidZero / Vite+ stack options
 
-**Option 1 — Nuxt + Cloudflare Workers (full-stack edge)**
+### 1. Nuxt + Cloudflare Workers
 
-```
-nuxt-app/
-├── pages/           (file-based routing)
-├── server/api/      (Nitro server routes — runs on Cloudflare Workers)
-├── server/middleware/
-└── wrangler.toml    (Cloudflare Workers config)
-```
-
-- Template: [`npx nuxi init --template cloudflare`](https://nuxt.com/deploy/cloudflare)
-- Secrets live in `wrangler.toml` bindings / `.dev.vars` locally — never bundled to the client.
-
-**Option 2 — Nuxt + tRPC + Drizzle (type-safe full-stack)**
-
-```
-nuxt-app/
-├── server/trpc/     (tRPC router — end-to-end typed API)
-├── server/db/       (Drizzle ORM + D1 or Postgres)
-└── composables/     (useTRPC — typed client hooks)
+```text
+Nuxt app
+├── pages/
+├── server/api/
+├── server/routes/
+└── Cloudflare deployment target
 ```
 
-- Starter: [nuxt-trpc-drizzle template on GitHub](https://github.com/Hebilicious/nuxt-trpc-drizzle) *(community template)*
-- The `nuxt-trpc` module generates fully typed client from your server router — no schema duplication.
+Why it is strong:
 
-**Option 3 — Vue SPA + Vite + Cloudflare Pages + Workers API**
+- a familiar full-stack app model
+- server routes and rendering built in
+- strong Cloudflare path
+- good fit for the client/server separation this post is discussing
 
-```
-frontend/            (Vue 3 + Vite — deployed to Cloudflare Pages)
-workers/
-└── api/             (Hono on Cloudflare Workers — typed with TypeScript)
-```
+Start with:
 
-- Template: [Hono + Cloudflare Workers starter](https://hono.dev/getting-started/cloudflare-workers)
-- The Hono RPC client (`hc`) gives typed fetch from Vue to your Workers API — similar to tRPC but lighter.
+- [Nuxt on Cloudflare](https://nuxt.com/deploy/cloudflare)
 
-**Option 4 — Nuxt + Auth.js + Cloudflare D1 (auth-first stack)**
+### 2. Vite frontend + Hono API on Workers
 
-```
-nuxt-app/
-├── server/api/auth/ (Auth.js / @sidebase/nuxt-auth)
-├── server/db/       (Drizzle + Cloudflare D1)
-└── middleware/      (server-side auth guard)
+```text
+frontend/
+└── Vite app
+api/
+└── Hono on Cloudflare Workers
 ```
 
-- Module: [`@sidebase/nuxt-auth`](https://sidebase.io/nuxt-auth/getting-started)
-- Auth providers, session tokens, and OAuth secrets stay in Cloudflare Workers bindings — client only sees a session cookie.
+Why it is strong:
+
+- minimal and clear separation
+- excellent for teams that want Vite without immediately adopting a larger meta-framework
+- good typed-API story with TypeScript and Hono client helpers
+
+Start with:
+
+- [Hono on Cloudflare Workers](https://hono.dev/getting-started/cloudflare-workers)
+
+### 3. Nuxt + typed server routes + Cloudflare storage/services
+
+```text
+Nuxt app
+├── app UI
+├── server API
+├── auth
+├── storage / db bindings
+└── edge deployment
+```
+
+Why it is strong:
+
+- one repo, one framework, one deployment path
+- secrets stay server-side
+- good fit for product teams that want frontend-first ownership with real backend capability
+
+### 4. Vite+ oriented monorepo
+
+```text
+apps/
+├── web
+├── admin
+└── docs
+packages/
+├── ui
+├── api-client
+└── config
+```
+
+Why it is strong:
+
+- this is where Vite+ becomes more than “faster bundling”
+- the dev / build / test / lint / run workflow becomes more coherent across the whole workspace
+
+This is the kind of stack I would expect more teams to explore as Vite+ matures through 2026.
 
 ---
 
-## The Shared Direction: Server + Client Split Done Right
+## So are Aspire and VoidZero solving the same problem?
 
-Both ecosystems are converging on the same pattern:
+I think the honest answer is **yes, but from opposite ends**.
 
-1. **Client bundle** — static assets on CDN (Cloudflare Pages / Azure Static Web Apps / Azure CDN). Pure UI, no secrets.
-2. **Server / edge layer** — your business logic, secret API keys, auth tokens, database access. Runs close to users (edge) or in a managed compute tier.
-3. **Observability and tooling** — local dev must feel fast and unified; production must be observable without heavy ops overhead.
+Aspire starts from:
 
-In .NET Aspire, the server layer is an ASP.NET Core service (containerised or on App Service), and the observability comes from OpenTelemetry piped into Azure Monitor or a self-hosted stack. In VoidZero's model, the server layer is a Cloudflare Worker (or Nitro server), secrets live in Workers bindings, and the client never sees them.
+- distributed systems,
+- backend reliability,
+- resource composition,
+- deployment pipelines,
+- and observability.
 
-Next.js (React) is moving in a very similar direction with React Server Components — David Fowler and the ASP.NET Core team have commented publicly that the server-component model for web apps echoes patterns that Razor Pages and Blazor have offered for years on the .NET side. The convergence is real.
+VoidZero starts from:
 
----
+- frontend performance,
+- toolchain fragmentation,
+- JavaScript ergonomics,
+- build/test/lint cohesion,
+- and edge deployment.
 
-## Further Reading and Resources
+But both are trying to remove the same pain:
 
-### .NET Aspire
+- too many tools,
+- too many seams,
+- too much config drift,
+- too much difference between “my machine” and “production.”
 
-- [Official Docs — learn.microsoft.com/dotnet/aspire](https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview)
-- [dotnet/aspire GitHub](https://github.com/dotnet/aspire)
-- [dotnet/aspire-samples GitHub](https://github.com/dotnet/aspire-samples)
-- [dotnet/eShop — full microservices reference app](https://github.com/dotnet/eShop)
-- [Aspire Fridays — YouTube playlist](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oWNHfHPF9JKWEtqFjjUJ8Yq)
-- [.NET Blog — devblogs.microsoft.com/dotnet](https://devblogs.microsoft.com/dotnet/)
-
-### VoidZero / Vite / Nuxt
-
-- [VoidZero — voidzero.dev](https://voidzero.dev)
-- [Vite Docs — vitejs.dev](https://vitejs.dev)
-- [Rolldown — rolldown.rs](https://rolldown.rs)
-- [Oxc — oxc.rs](https://oxc.rs)
-- [Nuxt Docs — nuxt.com](https://nuxt.com)
-- [Nuxt on Cloudflare — nuxt.com/deploy/cloudflare](https://nuxt.com/deploy/cloudflare)
-- [Syntax.fm — syntax.fm](https://syntax.fm) (search episodes: Vite 6, Rolldown, VoidZero)
-- [Evan You — x.com/youyuxi](https://x.com/youyuxi)
-- [Anthony Fu — antfu.me](https://antfu.me) (Vue / Vite core, prolific open-source tooling)
-- [Hono — hono.dev](https://hono.dev) (lightweight server for Cloudflare Workers with typed RPC)
+That is why the comparison is interesting in 2026 in a way it was not in 2024.
 
 ---
 
-## Conclusion
+## People worth following if you want to keep up
 
-The developer experience problem is the same on both sides: too much glue code between your idea and a running, observable, deployable application. Aspire attacks it from the .NET side with orchestration and service defaults. VoidZero attacks it from the JavaScript side with a unified Rust-powered toolchain and an edge-first deployment model.
+### Aspire
 
-The people driving these efforts — David Fowler, Damian Edwards, Mady Montaquila, and Scott Hanselman on one side; Evan You, Wes Bos, Scott Tolinski, and the Vue/Nuxt teams on the other — are all working toward a future where "it just works" is not a marketing claim but a measurable outcome. The stacks and templates above are the most direct path to experiencing that today.
+- [David Fowler](https://github.com/davidfowl)
+- [Damian Edwards](https://github.com/DamianEdwards)
+- [Mady Montaquila](https://github.com/maddymontaquila)
+- [Scott Hanselman](https://www.hanselman.com/)
+- [Aspire blog](https://devblogs.microsoft.com/aspire/)
+- [Aspire docs](https://aspire.dev/)
+
+### VoidZero / Vite+
+
+- [Evan You](https://github.com/yyx990803)
+- [VoidZero](https://voidzero.dev/)
+- [Vite](https://vite.dev/)
+- [Rolldown](https://rolldown.rs/)
+- [Oxc](https://oxc.rs/)
+- [Vitest](https://vitest.dev/)
+- [Syntax.fm](https://syntax.fm/)
+- [Nuxt](https://nuxt.com/)
+
+---
+
+## Final thought
+
+If I had to summarize the 2026 state in one sentence:
+
+- **Aspire 13** is the most interesting Microsoft move toward a real polyglot app platform.
+- **VoidZero / Vite+** is the most interesting move in JavaScript toward a real unified toolchain and deployment experience.
+
+They are not identical, and they are not competing for exactly the same team. But they are responding to the same reality:
+
+> developers do not need more disconnected tools — they need fewer seams between building, running, testing, observing, and deploying software.
+
+That is why both are worth paying attention to right now.
+
+---
+
+## Source notes
+
+For the 2026 details in this refresh, the most useful references were:
+
+- [Aspire support policy](https://dotnet.microsoft.com/en-us/platform/support/policy/aspire)
+- [What’s new in Aspire 13](https://aspire.dev/whats-new/aspire-13/)
+- [.NET 11 Preview 2 announcement](https://devblogs.microsoft.com/dotnet/dotnet-11-preview-2/)
+- [What’s new in .NET 11](https://learn.microsoft.com/dotnet/core/whats-new/dotnet-11/overview)
+- [Node.js release schedule](https://github.com/nodejs/Release)
+- [Node.js previous releases](https://nodejs.org/en/about/previous-releases)
+- [VoidZero](https://voidzero.dev/)
+- [Announcing Vite+](https://voidzero.dev/posts/announcing-vite-plus)
