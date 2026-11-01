@@ -26,6 +26,28 @@ The 2025 [DORA State of AI-assisted Software Development](https://dora.dev/resea
 
 Let's explore that system through one ordinary feature.
 
+## The illusion of quality: impressive demos versus measurable outcomes
+
+Software development has long involved an imbalance of knowledge. The developer understands the implementation; the person requesting the feature often sees only the interface and a demonstration. An attractive screen, sophisticated architecture or passing test suite can create confidence without proving that the software is correct, secure, maintainable or suitable for the business.
+
+This is not necessarily deliberate deception. Developers can mistake technical sophistication for engineering quality, and AI agents can reproduce the same habits: premature abstraction, unnecessary complexity, invented assumptions and tests that validate only the implementation's own interpretation.
+
+But agents also offer an opportunity to **make quality understandable to non-technical stakeholders**. The goal is not to turn every manager into an engineer. It is to explain what was agreed, what has actually been verified, which risks remain, and what decisions need business input—in the language of the business rather than obscure technical jargon.
+
+Consider the holiday management feature below. A polished calendar and an approval button might impress a customer, yet conceal unanswered questions about leave allowance, approval authority or cancellations. Instead of merely presenting a working demo, a team and its agents could show a concise **quality evidence summary**:
+
+| Business question | Evidence the team should provide |
+| --- | --- |
+| Can employees request leave within their allowance? | Agreed rule, boundary tests and customer walkthrough |
+| Can the wrong manager approve a request? | Authorisation policy and executed permission tests |
+| What happens if two approvals happen at once? | Concurrency scenario and integration-test result |
+| Can support explain a disputed decision? | Audit-trail demonstration and operational checks |
+| What has not yet been implemented? | Explicit exclusions, open questions and known limitations |
+
+An agent can translate real test results and design decisions into this summary, but its explanation is **not itself evidence**. Test executions, stakeholder decisions and observed system behaviour must support the claims.
+
+This is **quality transparency**: making the basis for confidence visible to the people who request, build, operate and maintain software. It complements DORA's delivery metrics rather than replacing them. The objective is to narrow the knowledge gap between stakeholders and implementers, without letting agents automate the same misunderstandings that existed before.
+
 ## The feature: holiday management in an existing web application
 
 A company asks: *“Employees should request holidays online, and managers should approve or reject them.”*
@@ -166,7 +188,7 @@ It is software that solves the intended problem, behaves correctly, can be deliv
 
 AI gives small teams an opportunity to shorten the distance between an idea and working software. But if we preserve late feedback and unclear requirements, we may only build smaller waterfalls more quickly.
 
-**The real improvement is a continuous loop of shared intent, small changes, evidence, customer feedback and maintained knowledge.**
+**The real improvement is a continuous loop of shared intent, small changes, understandable evidence, customer feedback and maintained knowledge. AI should help everyone involved judge quality—not merely make the implementation look more impressive.**
 
 ## Further reading
 
